@@ -3,12 +3,15 @@ import styled from "styled-components";
 const GlobalButton = styled.button`
   background: transparent;
   color: white;
+  font-size: 1.3rem;
+  border: transparent;
+  margin: 10px 20px 10px 0px;
 `;
 
 interface ButtonProps {
   children: string;
 }
-function Button({ children }: ButtonProps) {
+function PageButton({ children }: ButtonProps) {
   return (
     <div>
       <GlobalButton>{children}</GlobalButton>
@@ -16,4 +19,4 @@ function Button({ children }: ButtonProps) {
   );
 }
 
-export default Button;
+export default PageButton;
