@@ -3,18 +3,18 @@ import "../../Animations/ButtonHover.css";
 
 const GlobalButton = styled.button`
   background: transparent;
-  color: white;
-  font-size: 2rem;
+  color: black;
+  font-size: 1em;
   border: 1px solid white;
-  width: 70%;
-  margin: 0.3rem;
+  width: 8em;
+  margin: 0.3em;
 `;
 
 interface ButtonProps {
   children: string;
 }
-function AncestorButton({ children }: ButtonProps) {
+function BuyTicketsButton({ children }: ButtonProps) {
   return <GlobalButton className="custom-button">{children}</GlobalButton>;
 }
 
-export default AncestorButton;
+export default BuyTicketsButton;

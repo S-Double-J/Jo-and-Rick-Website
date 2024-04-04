@@ -1,0 +1,13 @@
+.custom-button {
+    transition: 0;
+}
+
+.custom-button:hover {
+  border: transparent;
+  background: linear-gradient(
+    153deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(15, 19, 157, 1) 100%
+  );
+  color: black;
+}

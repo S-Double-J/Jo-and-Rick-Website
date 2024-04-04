@@ -8,8 +8,8 @@ const Gradient = styled.div`
   background: linear-gradient(rgba(0, 0, 0, 0.76) 60%, rgba(0, 0, 0, 0));
   position: absolute;
   display: flex;
-`;
-const MajorContainer = styled.div`
+  `;
+  const MajorContainer = styled.div`
   display: flex;
   height: 10rem;
   justify-content: center;
@@ -23,7 +23,7 @@ const HomeContainer = styled.div`
   flex-grow: 1;
 `;
 const PagesContainer = styled.div`
-  width: 32rem;
+  width: 35rem;
   display: flex;
   flex-wrap: wrap;
   margin: 10px 40px;
