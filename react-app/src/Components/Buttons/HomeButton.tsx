@@ -1,12 +1,10 @@
 import styled from "styled-components";
-import "../../Animations/HomeButtonHover.css"
 
 const Button = styled.button`
   background: transparent;
   color: white;
-  font-size: 4em;
-  border-style: solid;
-  border-color: rgba(1, 1, 1, 0);
+  font-size: 2.5rem;
+  border: 1px solid transparent;
   font-weight: 100;
 `;
 

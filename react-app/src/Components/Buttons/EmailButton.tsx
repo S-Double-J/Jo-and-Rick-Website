@@ -1,16 +1,13 @@
 import styled from "styled-components";
-
 const GlobalButton = styled.div`
-  background: transparent;
-  color: white;
-  border: 0;
-  height: 2rem;
-  width: calc(100% / 6);
+  margin: 0.3rem;
+  grid-column: 1 / 4;
+  grid-row: 5 / 6;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  text-align: center;
 `;
 const Gradient = styled.div`
   height: 1px;
@@ -21,7 +18,7 @@ const Gradient = styled.div`
     rgba(160, 64, 182, 1) 100%
   );
   border: 0;
-  border-radius: 1rem;
+  border-radius: 3rem;
   position: absolute;
   top: -10px;
   left: -10px;
@@ -29,18 +26,18 @@ const Gradient = styled.div`
 `;
 
 const ButtonText = styled.p`
-z-index: 2;
+  font-size: 2rem;
+  z-index: 2;
+  padding-left: 2rem;
+  padding-right: 2rem;
 `
 interface ButtonProps {
   children: string;
 }
-function PageButton({ children }: ButtonProps) {
-  return (
-    <GlobalButton className="page-button">
-      <Gradient className="button-gradient"/>
-      <ButtonText className="font-color">{children}</ButtonText>
-    </GlobalButton>
-  );
+function EmailButton({ children }: ButtonProps) {
+  return <GlobalButton className="page-button">
+    <Gradient className="button-gradient"/>
+    <ButtonText className="font-color">{children}</ButtonText></GlobalButton>;
 }
 
-export default PageButton;
+export default EmailButton;
