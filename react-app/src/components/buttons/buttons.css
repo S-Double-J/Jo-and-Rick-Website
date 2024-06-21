@@ -1,0 +1,173 @@
+.nav-button {
+  --default-color: white;
+  --hover-color: rgb(0, 140, 255);
+
+  background: transparent;
+  color: var(--default-color);
+  height: 36px;
+  width: calc(100% / 6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  flex-grow: 1;
+  font-size: 18px;
+}
+
+.nav-button:hover {
+  cursor: pointer;
+}
+.nav-button:hover .nav-font {
+  color: var(--hover-color);
+}
+
+.nav-font {
+  transition: 0.2s ease-in-out;
+  color: var(--default-color);
+  z-index: 2;
+}
+.burger-button {
+  --default-color: white;
+  --hover-color: rgb(0, 140, 255);
+
+  color: var(--default-color);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.burger-button:hover {
+  cursor: pointer;
+}
+.burger-button:hover .nav-font {
+  color: var(--hover-color);
+}
+
+.home-button:hover {
+  cursor: pointer;
+  color: rgb(0, 140, 255);
+}
+.font-color {
+  transition: 0.5s ease-in-out;
+}
+.button {
+  --default-button-font-color: white;
+  --default-button-background-color: rgb(0, 140, 255);
+  --hover-button-background-color: rgb(0, 35, 133);
+  --default-button-border-color: var(--default-button-background-color);
+  --hover-button-border-color: rgba(255, 255, 255, 0.793);
+
+  color: var(--default-button-font-color);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  background: var(--default-button-background-color);
+}
+.button::before {
+  content: "";
+  transition: 0.5s ease-in-out;
+  position: absolute;
+  border: 2px solid var(--default-button-border-color);
+  inset: 10px;
+  border-radius: 8rem;
+}
+.button:hover::before {
+  content: "";
+  border: 1px solid var(--hover-button-border-color);
+  position: absolute;
+  inset: 5px;
+  border-radius: 8rem;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: var(--hover-button-background-color);
+}
+
+.button-small {
+  --default-color: white;
+  --hover-color: rgb(0, 140, 255);
+
+  background: transparent;
+  color: var(--default-color);
+  cursor: pointer;
+}
+
+.button-small:hover .font-color{
+  color: var(--hover-color);
+}
+
+.color-filter {
+  transition: opacity 0.3s ease;
+
+}
+.track-button:hover {
+  cursor: pointer;
+}
+.track-button:hover .color-filter {
+  opacity: 1;
+}
+.music:hover {
+  cursor: pointer;
+}
+.music:hover .color-filter {
+  opacity: 1;
+}
+.news:hover {
+  cursor: pointer;
+}
+.news:hover .color-filter {
+  opacity: 1;
+}
+.about:hover {
+  cursor: pointer;
+}
+.about:hover .color-filter {
+  opacity: 1;
+}
+
+@keyframes new-img {
+  0% {
+    width: 1px;
+    height: 1px;
+  }
+  100% {
+    width: 30rem;
+    max-width: 660px;
+    min-width: 540px;
+    min-height: 540px;
+    height: 30rem;
+    max-height: 660px;
+  }
+}
+
+.hamburger {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.hamburger:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.hamburger-span {
+  background: white;
+  height: 2px;
+  width: 40px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.menu-background {
+  background: rgba(0, 0, 0, 0.76);
+  width: 100%;
+  height: calc(100vh - 117px);
+  z-index: 20;
+}
