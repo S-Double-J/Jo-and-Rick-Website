@@ -133,7 +133,7 @@ function JoNews() {
           <Title>Book Talks</Title>
           <FloatBox>
             <Image
-              src="public/Images/News Section/NewsImages/JoDoingBookTalk.jpg"
+              src="Images/News Section/NewsImages/JoDoingBookTalk.jpg"
               alt="Jo Doing Book Talk"
             />
               <Text>
@@ -164,7 +164,7 @@ function JoNews() {
           <Title>Art and Jewellery</Title>
           <FloatBox>
             <Image
-              src="public/Images/News Section/NewsImages/JoEarrings.jpg"
+              src="Images/News Section/NewsImages/JoEarrings.jpg"
               alt="Jo jewellery"
             />
               <Text>
@@ -186,7 +186,7 @@ function JoNews() {
           <Title>Workshops</Title>
           <FloatBox>
             <Image
-              src="public/Images/About Section/JoMakingJewelry.jpg"
+              src="Images/About Section/JoMakingJewelry.jpg"
               alt="Jo Making Jewelry"
             />
               <Text>
@@ -222,7 +222,7 @@ function JoNews() {
           <Title>Book Talks</Title>
           <Box>
             <Image
-              src="public/Images/News Section/NewsImages/JoDoingBookTalk.jpg"
+              src="Images/News Section/NewsImages/JoDoingBookTalk.jpg"
               alt="Jo Doing Book Talk"
             />
             <TextBox>
@@ -270,14 +270,14 @@ function JoNews() {
               </SocialBox>
             </TextBox>
             <Image
-              src="public/Images/News Section/NewsImages/JoEarrings.jpg"
+              src="Images/News Section/NewsImages/JoEarrings.jpg"
               alt="Jo jewellery"
             />
           </Box>
           <Title>Workshops</Title>
           <Box>
             <Image
-              src="public/Images/About Section/JoMakingJewelry.jpg"
+              src="Images/About Section/JoMakingJewelry.jpg"
               alt="Jo Making Jewelry"
             />
             <TextBox>
