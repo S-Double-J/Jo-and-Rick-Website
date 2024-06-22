@@ -100,7 +100,7 @@ function AboutPage() {
         <Name>Jo</Name>
         <Box>
           <MobileImageLeft
-            src="public/Images/About Section/Jo singing .jpg"
+            src="Images/About Section/Jo singing .jpg"
             alt="Jo singing"
           />
           <Text>
@@ -111,7 +111,7 @@ function AboutPage() {
         </Box>
         <Box>
           <MobileImageRight
-            src="public/Images/About Section/Jo jewellery close up.jpg"
+            src="Images/About Section/Jo jewellery close up.jpg"
             alt="Jo jewellery close up"
           />
           <Text>
@@ -124,7 +124,7 @@ function AboutPage() {
         </Box>
         <Box>
           <MobileImageLeft
-            src="public/Images/About Section/FindingBeautyBook.jpg"
+            src="Images/About Section/FindingBeautyBook.jpg"
             alt="Finding Beauty Book"
           />
           <Text>
@@ -139,7 +139,7 @@ function AboutPage() {
         </Box>
         <Box>
           <MobileImageRight
-            src="public/Images/About Section/Jo and Rick for about before Ricks bit.jpg"
+            src="Images/About Section/Jo and Rick for about before Ricks bit.jpg"
             alt="Jo and Rick"
           />
           <Text>
@@ -159,7 +159,7 @@ function AboutPage() {
         <Name>Rick</Name>
         <Box>
           <MobileImageLeft
-            src="public/Images/About Section/RickLookingOverRiver.jpg"
+            src="Images/About Section/RickLookingOverRiver.jpg"
             alt="Rick Looking Over River"
           />
           <Text>
@@ -173,7 +173,7 @@ function AboutPage() {
         </Box>
         <Box>
           <MobileImageRight
-            src="public/Images/About Section/RickOnDrumsB&W.jpg"
+            src="Images/About Section/RickOnDrumsB&W.jpg"
             alt="Rick On Drums black and white"
           />
           <Text>
@@ -186,7 +186,7 @@ function AboutPage() {
           </Text>
         </Box>
         <Box>
-          <MobileImageLeft src="public/Images/News Section/Rick2.jpg" alt="Rick hands" />
+          <MobileImageLeft src="Images/News Section/Rick2.jpg" alt="Rick hands" />
           <Text>
             As accompanist for education and performance dance projects, he has
             also been a tutor for WOMAD and Glyndebourne and spent many years
@@ -199,7 +199,7 @@ function AboutPage() {
         </Box>
         <Box>
           <MobileImageRight
-            src="public/Images/About Section/both hands drumming instead of Rick on zither.jpg"
+            src="Images/About Section/both hands drumming instead of Rick on zither.jpg"
             alt="Jo and Rick drumming"
           />
           <Text>
@@ -229,13 +229,13 @@ function AboutPage() {
             one seems to evolve constantly, growing into many new off-shoots.
           </Text>
           <Image
-            src="public/Images/About Section/Jo singing .jpg"
+            src="Images/About Section/Jo singing .jpg"
             alt="Jo singing"
           />
         </Box>
         <Box>
           <Image
-            src="public/Images/About Section/Jo jewellery close up.jpg"
+            src="Images/About Section/Jo jewellery close up.jpg"
             alt="Jo jewellery close up"
           />
           <Text>
@@ -257,13 +257,13 @@ function AboutPage() {
             wordpress site.
           </Text>
           <Image
-            src="public/Images/About Section/FindingBeautyBook.jpg"
+            src="Images/About Section/FindingBeautyBook.jpg"
             alt="Finding Beauty Book"
           />
         </Box>
         <Box>
           <Image
-            src="public/Images/About Section/Jo and Rick for about before Ricks bit.jpg"
+            src="Images/About Section/Jo and Rick for about before Ricks bit.jpg"
             alt="Jo and Rick"
           />
           <TextBox>
@@ -293,13 +293,13 @@ function AboutPage() {
             of inadequate secondary music teaching.
           </Text>
           <Image
-            src="public/Images/About Section/RickLookingOverRiver.jpg"
+            src="Images/About Section/RickLookingOverRiver.jpg"
             alt="Rick Looking Over River"
           />
         </Box>
         <Box>
           <Image
-            src="public/Images/About Section/RickOnDrumsB&W.jpg"
+            src="Images/About Section/RickOnDrumsB&W.jpg"
             alt="Rick On Drums black and white"
           />
           <Text>
@@ -321,11 +321,11 @@ function AboutPage() {
             teaches but composes, designs soundscapes and installations and runs
             music sessions as psychiatric therapy.
           </Text>
-          <Image src="public/Images/News Section/Rick2.jpg" alt="Rick hands" />
+          <Image src="Images/News Section/Rick2.jpg" alt="Rick hands" />
         </Box>
         <Box>
           <Image
-            src="public/Images/About Section/both hands drumming instead of Rick on zither.jpg"
+            src="Images/About Section/both hands drumming instead of Rick on zither.jpg"
             alt="Jo and Rick drumming"
           />
           <TextBox>

@@ -112,7 +112,7 @@ function RickNews() {
           <Title>Other Music Projects</Title>
           <FloatBox>
             <ImageNoFloat
-              src="public/Images/News Section/NewsImages/WhenMountainsMeet.jpg"
+              src="Images/News Section/NewsImages/WhenMountainsMeet.jpg"
               alt="When Mountains Meet"
             />
             <Text>
@@ -133,7 +133,7 @@ function RickNews() {
           <Title>Drumming Workshops</Title>
           <FloatBox>
             <Image
-              src="public/Images/News Section/Rick1.jpg"
+              src="Images/News Section/Rick1.jpg"
               alt="Rick Drumming Workshops"
             />
             <Text>
@@ -179,14 +179,14 @@ function RickNews() {
             </Link>
           </TextBox>
           <Image
-            src="public/Images/News Section/NewsImages/WhenMountainsMeet.jpg"
+            src="Images/News Section/NewsImages/WhenMountainsMeet.jpg"
             alt="When Mountains Meet"
           />
         </Box>
         <Title>Drumming Workshops</Title>
         <Box>
           <Image
-            src="public/Images/News Section/Rick1.jpg"
+            src="Images/News Section/Rick1.jpg"
             alt="Rick Drumming Workshops"
           />
           <TextBox>
