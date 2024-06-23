@@ -7,7 +7,7 @@ const liveTableObjectArray = [
   },
   {
     date: "21.07.2024",
-    event: "JO AND RICK @ THE FESTIVE AL THE EDGE",
+    event: "JO AND RICK @ THE FESTIVAL AT THE EDGE",
     location: "CLEOBURY MORTIMER",
     link: "https://www.festivalattheedge.org/about/full-programme-2024/"
   },
