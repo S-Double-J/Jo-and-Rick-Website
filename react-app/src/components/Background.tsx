@@ -7,7 +7,7 @@ const Background1 = styled.div`
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 100vh;
+  height: 100svh;
   position: absolute;
   top: 0;
   left: 0;
@@ -25,7 +25,7 @@ const Background2 = styled.div`
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 100vh;
+  height: 100svh;
   position: absolute;
   top: 0;
   left: 0;
@@ -39,7 +39,7 @@ const Background3 = styled.div`
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 100vh;
+  height: 100svh;
   position: absolute;
   top: 0;
   left: 0;
@@ -53,7 +53,7 @@ const Background4 = styled.div`
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 100vh;
+  height: 100svh;
   position: absolute;
   top: 0;
   left: 0;
@@ -63,7 +63,7 @@ const Background4 = styled.div`
 `;
 const ImgContainer = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 100svh;
   position: absolute;
   top: 0;
   left: 0;

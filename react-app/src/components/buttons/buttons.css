@@ -168,7 +168,7 @@
 .menu-background {
   background: rgba(0, 0, 0, 0.76);
   width: 100%;
-  height: calc(100vh - 117px);
+  height: calc(100svh - 117px);
   position: fixed;
   z-index: 20;
 }

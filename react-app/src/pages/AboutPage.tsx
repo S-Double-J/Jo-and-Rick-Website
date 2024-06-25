@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const ColorFilter = styled.div`
-  height: calc(100vh - 117px);
+  height: calc(100svh - 117px);
   width: 100%;
   background: rgba(0, 0, 0, 0.76);
   display: flex;

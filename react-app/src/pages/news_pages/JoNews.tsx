@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 const ColorFilter = styled.div`
-  height: calc(100vh - 117px);
+  height: calc(100svh - 117px);
   background: rgba(0, 0, 0, 0.76);
   display: flex;
   justify-content: center;
