@@ -202,7 +202,7 @@ function JoNews() {
             <TextBox>
               <Text>
                 Next year Jo will be part of a touring art exhibition at Into
-                the Wild festival in Norfolk running her art and poetry workshop
+                the Wild festival in Norfolk, running her art and poetry workshop
                 on ‘Connecting to Nature’ and featuring a new song ‘I am making
                 a nest of my hair’ running a series of natural sculpture
                 workshops around the theme of nests and protection.
@@ -291,10 +291,11 @@ function JoNews() {
                 influence and inspire creative expression.
               </Text>
               <Text>
-                Next year Jo will be collaborating with a poet and nature photographer, running her art and poetry workshop
+              Next year Jo will be part of a touring art exhibition at Into
+                the Wild festival in Norfolk, running her art and poetry workshop
                 on ‘Connecting to Nature’ and featuring a new song ‘I am making
-                a nest of my hair’ with a series of natural sculpture
-                workshops based around the theme of nests and protection.
+                a nest of my hair’ running a series of natural sculpture
+                workshops around the theme of nests and protection.
               </Text>
               <Link href="https://jojukes.wordpress.com/" className="button">
                 <LinkText>visit Jo's website</LinkText>
