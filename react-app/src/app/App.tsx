@@ -9,19 +9,24 @@ import AboutPage from "../pages/AboutPage";
 import RickNews from "../pages/news_pages/RickNews";
 import JoNews from "../pages/news_pages/JoNews";
 import styled from "styled-components";
+import Menu from "../components/HamburgerMenu";
+import { useState } from "react";
 
 const Container = styled.div`
   height: 100vh;
-  overflow-y: auto;
   overflow-x: hidden;
+  width: 100vw;
+  position: relative;
 `;
 
 function App() {
+  const [active, setActive] = useState(false);
   return (
     <BrowserRouter>
-      <Container>
         <Background />
-        <NavBar />
+      <Container id="Container">
+        <NavBar key="Nav-bar" active={active} setActive={setActive}/>
+        <Menu key="Hamburger-menu" active={active} setActive={setActive}/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="the_ancestor_in_me/*" element={<AncestorAlbum />} />
