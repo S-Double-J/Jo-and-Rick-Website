@@ -13,7 +13,7 @@ import Menu from "../components/HamburgerMenu";
 import { useState } from "react";
 
 const Container = styled.div`
-  height: 100vh;
+  height: 100svh;
   overflow-x: hidden;
   width: 100vw;
   position: relative;
