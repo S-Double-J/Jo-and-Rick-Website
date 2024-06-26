@@ -357,7 +357,7 @@ function Live() {
             </TdButton>
           </Tr>
           <Tr>
-            <Td>24.07.2024</Td>
+            <Td>24.08.2024</Td>
             <TdEvent>JO AND RICK WITH ANNE WOOD</TdEvent>
             <Td>ULLAPOOL</Td>
             <TdButton>

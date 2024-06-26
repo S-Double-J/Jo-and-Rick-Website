@@ -127,7 +127,7 @@ function Contact() {
         <BottomDiv>
           <SamEmailDiv>
             <SmallText id="sam-text-left">
-              Website by Sam Jukes // equire at
+              Website by Sam Jukes // enquire at
             </SmallText>
             <EmailSmall>SAMJUKES.DEV@GMAIL.COM</EmailSmall>
             <SmallText id="sam-text-right">for a free consultation</SmallText>
