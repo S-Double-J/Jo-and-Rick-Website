@@ -347,7 +347,7 @@ function Live() {
           <Tr>
             <Td>10.08.2024</Td>
             <TdEvent>
-              JO AND RICK WITH NICK HENNESSEY @ HUGH LUPTON'S SUMMER SERIES
+              JO AND RICK @ HUGH LUPTON'S SUMMER SERIES
             </TdEvent>
             <Td>NORFOLK</Td>
             <TdButton>

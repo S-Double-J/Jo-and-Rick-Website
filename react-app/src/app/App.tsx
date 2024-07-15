@@ -10,7 +10,7 @@ import RickNews from "../pages/news_pages/RickNews";
 import JoNews from "../pages/news_pages/JoNews";
 import styled from "styled-components";
 import Menu from "../components/HamburgerMenu";
-import { useState } from "react";
+import React, { useState } from "react";
 
 const Container = styled.div`
   height: 100svh;

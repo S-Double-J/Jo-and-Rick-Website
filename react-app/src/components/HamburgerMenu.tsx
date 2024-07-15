@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { MotionConfig, motion } from "framer-motion";
 import { HashLink as HLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
+import React from "react";
 
 const HamburgerButtonContainer = styled.div`
   display: flex;
