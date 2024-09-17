@@ -2,6 +2,8 @@ import styled from "styled-components";
 import liveTableObjectArray from "./LiveTableObj";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import TableInfoButton from "../buttons/TableInfoButton";
+
 const TableBox = styled.div`
   display: flex;
   flex-direction: column;
@@ -16,7 +18,6 @@ const StyledTable = styled.table`
   width: 100%;
   border-collapse: collapse;
 `;
-const Tr = styled.tr``;
 const Th = styled.th`
   border-bottom: 1px solid white;
   text-align: left;
@@ -128,11 +129,11 @@ const PopUpBox = styled.div`
     width: 400px;
     height: 400px;
   }
-  @media (max-width: 400px){
+  @media (max-width: 400px) {
     width: 300px;
     height: 300px;
   }
-  @media (max-width: 300px){
+  @media (max-width: 300px) {
     width: 250px;
     height: 400px;
   }
@@ -169,7 +170,7 @@ const PopUpButton = styled.a`
   border-radius: 50px;
   font-size: 16px;
   text-decoration: none;
-  @media (max-width: 399px){
+  @media (max-width: 399px) {
     font-size: 12.5px;
     height: 25px;
     width: 160px;
@@ -199,6 +200,10 @@ function Live() {
   const [activeUllapool, setActiveUllapool] = useState(false);
   const handleClickUllapool: ClickHandler = () => {
     setActiveUllapool((prevValue) => !prevValue);
+  };
+  const [activeTableDropDown, setActiveTableDropDown] = useState(false);
+  const handleClickTableDropDown: ClickHandler = () => {
+    setActiveTableDropDown((prevValue) => !prevValue);
   };
   return (
     <section id="Live">
@@ -314,58 +319,63 @@ function Live() {
             <PopUpTextRegular>
               This event is FREE and NO BOOKING is REQUIRED.
             </PopUpTextRegular>
-            <PopUpTextRegular style={{marginBottom: "20px"}}>
+            <PopUpTextRegular style={{ marginBottom: "20px" }}>
               Please simply arrive at the Argyll Hotel for a 9pm start.
             </PopUpTextRegular>
-            <PopUpTextRegular style={{marginBottom: "20px"}}>Address:</PopUpTextRegular>
+            <PopUpTextRegular style={{ marginBottom: "20px" }}>
+              Address:
+            </PopUpTextRegular>
             <PopUpTextRegular>Argyll Hotel,</PopUpTextRegular>
             <PopUpTextRegular>Ullapool,</PopUpTextRegular>
             <PopUpTextRegular>IV26 2UB</PopUpTextRegular>
           </PopUpBox>
         </motion.div>
         <StyledTable>
-          <Tr>
+          <tr>
             <Th>DATE</Th>
             <Th>EVENT</Th>
             <Th>LOCATION</Th>
-            <ThPurchase>PURCHASE</ThPurchase>
-          </Tr>
+            <ThPurchase>INFO</ThPurchase>
+          </tr>
           {liveTableObjectArray.map(
             ({ date, event, location, link }, index) => (
-              <Tr key={index}>
+              <tr
+                key={index}
+              >
                 <Td>{date}</Td>
                 <TdEvent>{event}</TdEvent>
                 <Td>{location}</Td>
                 <TdButton>
                   <Button href={link} className="button-small">
-                    <ButtonText className="font-color">BOOK TICKETS</ButtonText>
+                    <ButtonText className="font-color">MORE INFO</ButtonText>
                   </Button>
+                  <TableInfoButton>
+
+                  </TableInfoButton>
                 </TdButton>
-              </Tr>
+              </tr>
             )
           )}
-          <Tr>
+          <tr>
             <Td>10.08.2024</Td>
-            <TdEvent>
-              JO AND RICK @ HUGH LUPTON'S SUMMER SERIES
-            </TdEvent>
+            <TdEvent>JO AND RICK @ HUGH LUPTON'S SUMMER SERIES</TdEvent>
             <Td>NORFOLK</Td>
             <TdButton>
               <Button className="button-small" onClick={handleClickHughLupton}>
-                <ButtonText className="font-color">BOOK TICKETS</ButtonText>
+                <ButtonText className="font-color">MORE INFO</ButtonText>
               </Button>
             </TdButton>
-          </Tr>
-          <Tr>
+          </tr>
+          <tr>
             <Td>24.08.2024</Td>
             <TdEvent>JO AND RICK WITH ANNE WOOD</TdEvent>
             <Td>ULLAPOOL</Td>
             <TdButton>
               <Button className="button-small" onClick={handleClickUllapool}>
-                <ButtonText className="font-color">BOOK TICKETS</ButtonText>
+                <ButtonText className="font-color">MORE INFO</ButtonText>
               </Button>
             </TdButton>
-          </Tr>
+          </tr>
         </StyledTable>
       </TableBox>
     </section>

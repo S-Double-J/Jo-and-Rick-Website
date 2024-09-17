@@ -23,10 +23,10 @@ function App() {
   const [active, setActive] = useState(false);
   return (
     <BrowserRouter>
-        <Background />
+      <Background />
       <Container id="Container">
-        <NavBar key="Nav-bar" active={active} setActive={setActive}/>
-        <Menu key="Hamburger-menu" active={active} setActive={setActive}/>
+        <NavBar key="Nav-bar" active={active} setActive={setActive} />
+        <Menu key="Hamburger-menu" active={active} setActive={setActive} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="the_ancestor_in_me/*" element={<AncestorAlbum />} />

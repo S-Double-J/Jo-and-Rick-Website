@@ -14,7 +14,7 @@ const MajorContainer = styled.div`
   position: sticky;
   top: 0;
   z-index: 10;
-  overflow-x: hidden;
+  overflow: hidden;
 `;
 const HomeContainer = styled.div`
   margin: 10px;
