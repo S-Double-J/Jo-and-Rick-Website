@@ -201,10 +201,6 @@ function Live() {
   const handleClickUllapool: ClickHandler = () => {
     setActiveUllapool((prevValue) => !prevValue);
   };
-  const [activeTableDropDown, setActiveTableDropDown] = useState(false);
-  const handleClickTableDropDown: ClickHandler = () => {
-    setActiveTableDropDown((prevValue) => !prevValue);
-  };
   return (
     <section id="Live">
       <TableBox>
