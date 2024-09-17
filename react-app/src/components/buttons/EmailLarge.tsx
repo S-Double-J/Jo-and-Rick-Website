@@ -6,6 +6,8 @@ const Button = styled.a`
   text-align: center;
   text-decoration: none;
   border-radius: 8rem;
+  padding-left: 6px;
+  padding-right: 6px;
 `;
 const ButtonText = styled.p`
   font-size: 1rem;
