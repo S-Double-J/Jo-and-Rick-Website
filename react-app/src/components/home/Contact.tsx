@@ -44,7 +44,7 @@ const LineBottom = styled.div`
   }
 `;
 const ContactImg = styled.img`
-  width: 100%;
+  width: 50%;
   border-radius: 3%;
   @media (max-width: 650px){
     display: none;
@@ -89,6 +89,7 @@ const TopDiv = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 80vw;
 `;
 const BottomDiv = styled.div`
   display: flex;
