@@ -21,28 +21,25 @@ const Text = styled.p`
 `;
 
 const MobileImageLeft = styled.img`
-  width: 50%;
+  max-width: 50%;
   border-radius: 25px;
   float: left;
   margin: 10px;
+max-height: 250px;
+object-fit: contain;
 `;
 const MobileImageRight = styled.img`
-  width: 50%;
+  max-width: 50%;
   border-radius: 25px;
   float: right;
   margin: 10px;
+  max-height: 250px;
+  object-fit: contain;
 `;
 
 const Box = styled.div`
-  display: flex;
-  align-items: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  @media (max-width: 500px) {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    display: inline-block;
-  }
+  margin: 40px 0;
+  display: inline-block;
 `;
 
 const Link = styled.a`
@@ -66,11 +63,17 @@ const LinkText = styled.p`
 
 const Container = styled.div`
   display: flex;
-  padding: 10px;
+  padding: 20px;
   justify-content: center;
   align-items: flex-start;
   gap: 10px;
-  width: 100%;
+  width: 100svw;
+  box-sizing: border-box;
+  @media screen and (max-width: 900px) {
+    display: inline-block;
+    width: 100svw;
+    padding: 20px;
+  }
 `;
 const BentoFrame = styled.div`
   display: flex;
@@ -199,7 +202,7 @@ const Image9 = styled.img`
 `;
 
 function AboutPage() {
-  if (window.innerWidth <= 500) {
+  if (window.innerWidth <= 900) {
     return (
       <ColorFilter>
         <Container>

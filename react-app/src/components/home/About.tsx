@@ -5,10 +5,8 @@ const AboutDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 200px;
   @media (max-width: 580px){
     flex-direction: column-reverse;
-    padding-top: 50px;
   }
 `;
 const TextBox = styled.div`

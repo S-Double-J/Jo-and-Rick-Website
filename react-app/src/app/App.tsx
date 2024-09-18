@@ -6,8 +6,8 @@ import { Background } from "../components/Background";
 import AncestorAlbum from "../pages/AncestorAlbum";
 import WeavingAlbum from "../pages/WeavingAlbum";
 import AboutPage from "../pages/AboutPage";
-import RickNews from "../pages/news_pages/RickNews";
-import JoNews from "../pages/news_pages/JoNews";
+// import RickNews from "../pages/news_pages/RickNews";
+// import JoNews from "../pages/news_pages/JoNews";
 import styled from "styled-components";
 import Menu from "../components/HamburgerMenu";
 import { useState } from "react";
@@ -32,8 +32,8 @@ function App() {
           <Route path="the_ancestor_in_me/*" element={<AncestorAlbum />} />
           <Route path="weaving_the_world/*" element={<WeavingAlbum />} />
           <Route path="about" element={<AboutPage />} />
-          <Route path="jo_news" element={<JoNews />} />
-          <Route path="rick_news" element={<RickNews />} />
+          {/* <Route path="jo_news" element={<JoNews />} />
+          <Route path="rick_news" element={<RickNews />} /> */}
         </Routes>
       </Container>
     </BrowserRouter>

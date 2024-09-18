@@ -2,10 +2,6 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const MusicBox = styled.section`
-  padding-top: 200px;
-  @media (max-width: 580px){
-    padding-top: 50px;
-  }
 `;
 const TitleBox = styled.div`
   display: flex;
