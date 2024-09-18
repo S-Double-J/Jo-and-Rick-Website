@@ -11,6 +11,10 @@ const ColorFilter = styled.div`
 const Name = styled.p`
   font-size: 2.5rem;
 `;
+const BigText = styled.p`
+  font-size: 2rem;
+  align-self: stretch;
+`;
 const Text = styled.p`
   font-size: 1rem;
   align-self: stretch;
@@ -57,13 +61,7 @@ const Link = styled.a`
   }
 `;
 const LinkText = styled.p`
-  font-size: 1.5rem;
-  @media (max-width: 900px) {
-    font-size: 1.2rem;
-  }
-  @media (max-width: 800px) {
-    font-size: 1rem;
-  }
+  font-size: 1rem;
 `;
 
 const Container = styled.div`
@@ -357,7 +355,7 @@ function AboutPage() {
           </BottomBox>
         </BentoFrame>
         <TextFrame>
-          <Text>Jo</Text>
+          <BigText>Jo</BigText>
           <Text>
             Jo has many hats; poetry, silversmithing, art and song. With years
             of experience as an artist working in a wide range of mediums, each
@@ -392,7 +390,7 @@ function AboutPage() {
           <Link href="https://jojukes.wordpress.com/" className="button">
             <LinkText>Jo's website</LinkText>
           </Link>
-          <Text>Rick</Text>
+          <BigText>Rick</BigText>
           <Text>
             Rick Wilson works with sound: rhythmic and melodic, composed and
             improvised, contemporary and traditional. Drum kit, djembe, chenda,
