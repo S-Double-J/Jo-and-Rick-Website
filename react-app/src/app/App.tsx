@@ -18,7 +18,6 @@ const Container = styled.div`
   width: 100vw;
   position: relative;
 `;
-
 function App() {
   const [active, setActive] = useState(false);
   return (
