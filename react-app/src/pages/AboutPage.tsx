@@ -82,6 +82,7 @@ const BentoFrame = styled.div`
   gap: 10px;
   width: 50%;
   border-radius: 25px;
+  flex-grow: 1;
 `;
 const TextFrame = styled.div`
   display: flex;
@@ -90,6 +91,7 @@ const TextFrame = styled.div`
   align-items: center;
   gap: 10px;
   width: 50%;
+  max-width: 600px;
 `;
 const TopBox = styled.div`
   display: flex;

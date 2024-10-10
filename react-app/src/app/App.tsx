@@ -31,8 +31,6 @@ function App() {
           <Route path="the_ancestor_in_me/*" element={<AncestorAlbum />} />
           <Route path="weaving_the_world/*" element={<WeavingAlbum />} />
           <Route path="about" element={<AboutPage />} />
-          {/* <Route path="jo_news" element={<JoNews />} />
-          <Route path="rick_news" element={<RickNews />} /> */}
         </Routes>
       </Container>
     </BrowserRouter>
