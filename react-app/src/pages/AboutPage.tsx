@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
 const ColorFilter = styled.div`
-  height: calc(100svh - 117px);
   width: 100svw;
-  background: rgba(0, 0, 0, 0.76);
+  background: rgba(0, 0, 0, 0.5);
   z-index: -1;
-  overflow-y: auto;
   overflow-x: hidden;
+  backdrop-filter: blur(5px);
 `;
 const Name = styled.p`
   font-size: 2.5rem;

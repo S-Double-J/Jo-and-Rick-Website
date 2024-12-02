@@ -8,12 +8,13 @@ import "../components/buttons/buttons.css";
 
 const ColorFilter = styled.div`
   width: 100%;
-  background: rgba(0, 0, 0, 0.76);
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: -1;
+  backdrop-filter: blur(5px)
 `;
 const Empty = styled.div`
   width: 100%;

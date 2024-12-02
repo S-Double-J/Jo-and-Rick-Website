@@ -19,12 +19,13 @@ const TrackTitle = styled.p`
 `;
 const ColorFilter = styled.div`
   height: calc(100svh - 117px);
-  background: rgba(0, 0, 0, 0.76);
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: -1;
   overflow: hidden;
+  backdrop-filter: blur(5px);
   @media (max-width: 500px) {
     flex-direction: column;
   }
@@ -61,6 +62,7 @@ const AlbumDescriptionsContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 100px;
+
   @media (max-width: 1030px) {
     padding-top: 50px;
   }

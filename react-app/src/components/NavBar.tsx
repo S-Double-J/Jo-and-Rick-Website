@@ -10,11 +10,12 @@ const MajorContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: rgba(0, 0, 0, 0.76);
+  background: rgba(0, 0, 0, 0.5);
   position: sticky;
   top: 0;
   z-index: 10;
   overflow: hidden;
+  backdrop-filter: blur(5px)
 `;
 const HomeContainer = styled.div`
   margin: 10px;

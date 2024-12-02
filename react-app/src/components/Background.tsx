@@ -2,7 +2,7 @@ import styled from "styled-components";
 import "../app/App.css";
 
 const Background1 = styled.div`
-  background-image: url(/Images/TheAncestorInMe/3-SheMovesThroughHerPhases.jpg);
+  background-image: url(/Images/TheAncestorInMe/12-InDifferentWorlds.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -20,7 +20,7 @@ const Background1 = styled.div`
   box-sizing: border-box;
 `;
 const Background2 = styled.div`
-  background-image: url(/Images/TheAncestorInMe/6-BlackFeather.jpg);
+  background-image: url(/Images/TheAncestorInMe/11-BoneAndStone.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -48,7 +48,7 @@ const Background3 = styled.div`
   box-sizing: border-box;
 `;
 const Background4 = styled.div`
-  background-image: url(/Images/TheAncestorInMe/12-InDifferentWorlds.jpg);
+  background-image: url(/Images/TheAncestorInMe/1-StoriesOnYourSkin.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

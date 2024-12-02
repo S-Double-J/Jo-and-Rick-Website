@@ -6,8 +6,6 @@ import { Background } from "../components/Background";
 import AncestorAlbum from "../pages/AncestorAlbum";
 import WeavingAlbum from "../pages/WeavingAlbum";
 import AboutPage from "../pages/AboutPage";
-// import RickNews from "../pages/news_pages/RickNews";
-// import JoNews from "../pages/news_pages/JoNews";
 import styled from "styled-components";
 import Menu from "../components/HamburgerMenu";
 import { useState } from "react";
@@ -15,8 +13,29 @@ import { useState } from "react";
 const Container = styled.div`
   height: 100svh;
   overflow-x: hidden;
+  overflow-y: scroll;
   width: 100vw;
   position: relative;
+  /* width */
+  ::-webkit-scrollbar {
+    width: 6px;
+    cursor: pointer;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #3a3a3a;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #868686;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 140, 255);
+  }
 `;
 function App() {
   const [active, setActive] = useState(false);
