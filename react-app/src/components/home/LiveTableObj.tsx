@@ -1,5 +1,17 @@
 const liveTableObjectArray = [
   {
+    date: "09.05.2025",
+    event: "HERMON ARTS @ 7.30pm",
+    location: "OSWESTRY",
+    link: "https://www.hermon-arts.org.uk/whats-on",
+  },
+  {
+    date: "21.01.2025",
+    event: "SALFORD CITY RADIO'S WITCHES HOUR @ 2pm",
+    location: "RADIO",
+    link: "https://www.salfordcityradio.org/shows.php?id=2329",
+  },
+  {
     date: "08.10.2024",
     event: "SALFORD CITY RADIO'S WITCHES HOUR",
     location: "RADIO",
