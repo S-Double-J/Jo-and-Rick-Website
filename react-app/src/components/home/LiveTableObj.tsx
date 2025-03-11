@@ -3,7 +3,7 @@ const liveTableObjectArray = [
     date: "09.05.2025",
     event: "HERMON ARTS @ 7.30pm",
     location: "OSWESTRY",
-    link: "https://www.hermon-arts.org.uk/whats-on",
+    link: "https://www.hermon-arts.org.uk/events/rick-jo",
   },
   {
     date: "21.01.2025",
