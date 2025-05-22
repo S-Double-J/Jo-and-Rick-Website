@@ -156,27 +156,22 @@ function News() {
               <NewAlbum>
                 <TextLarge>Jo and Rick's Third Album</TextLarge>
                 <TextNormal>
-                  As we move into 2025, Jo and Rick are finishing off writing,
-                  shaping and recording songs for their third album ‘Being
-                  Human’. This collection is scheduled for release on 1 st May
-                  but, in the meantime, they will be releasing four singles from
-                  the album to BBC Introducing, Spotify, Bandcamp, Apple Music,
-                  You tube and other streaming platforms on a monthly basis
-                  followed by an album launch gig in May. <br />
+                  Jo and Rick have been working really hard on their third album
+                  ‘Being Human’ and are really excited to announce that it is
+                  now available on Bandcamp, Spotify and other streaming
+                  platforms, with a limited edition CD.
                   <br />
-                  First off, will be ‘I Can Invisible Myself’, a piece that
-                  started life as one of Jo’s poems off her wordpress site
-                  called ‘Invisible’. It&#39;s unusual in that Jo and Rick have
-                  swapped musical roles with Jo conceiving the rhythm on Rick’s
-                  partly smashed up gato tongue drum, whilst Rick plays zither.
-                  It’s a new sound which you can hear in January.
+                  Their music has expanded in depth and expression as their
+                  working relationship has become more unified. It still remains
+                  hard to classify but their ability to shift between
+                  instruments and styles, yet still retain their unique
+                  character is undeniable.
                   <br />
-                  February will see an alternative folky song called ‘Awenydd’
-                  released with Jo back on guitar and Rick on djembe. <br />
-                  In March comes ‘Standing Stone’ with a jazzy bossa nova swing
-                  with friend Niall Ross on saxophone. <br />
-                  April will bring ‘Rain’ - an ethereal, trancey song where Jo
-                  and Rick both play the handpan.
+                  This album focusses on what it is to be human, the emotions,
+                  the challenges, the relationships between people, places and
+                  the natural world. <br />
+                  They have collaborated further with friend Niall Ross on
+                  various saxophones and Anne Wood on violin.
                 </TextNormal>
               </NewAlbum>
               <JoNewsBox>
@@ -185,11 +180,11 @@ function News() {
                   <JoNewsInnerBox>
                     <TextLarge>Podcasts & Book Talks</TextLarge>
                     <TextNormal>
-                      As well as her book talks Jo has been involved in some exciting podcasts recently.
-                      You can listen here to her being interviewed by Emily
-                      Wilkinson on her Desire Lines podcast talking about her
-                      nature writing, books, music, landscape, creativity,
-                      women’s voices and healing.
+                      As well as her book talks Jo has been involved in some
+                      exciting podcasts recently. You can listen here to her
+                      being interviewed by Emily Wilkinson on her Desire Lines
+                      podcast talking about her nature writing, books, music,
+                      landscape, creativity, women’s voices and healing.
                     </TextNormal>
                     <Link
                       href="https://open.spotify.com/episode/3aazfQgGdLbeVuUENGOVpe?si=a08c6c5f064d456e"
@@ -198,7 +193,9 @@ function News() {
                       <LinkText>Listen on Spotify</LinkText>
                     </Link>
                     <TextNormal>
-                      Jo's books 'Finding Home - Journeys with the Hillforts of Shropshire' and ‘Finding Beauty – A Year of Nature Outside Your Door’ are still available for purchase.
+                      Jo's books 'Finding Home - Journeys with the Hillforts of
+                      Shropshire' and ‘Finding Beauty – A Year of Nature Outside
+                      Your Door’ are still available for purchase.
                     </TextNormal>
                     <Link
                       href="https://www.etsy.com/uk/shop/WolfwordsShop?ref=shop-header-name&listing_id=1614372614&from_page=listing"
@@ -284,10 +281,14 @@ function News() {
                 at Hafan Yr Afon, Newtown, Powys.
               </TextNormal>
               <TextNormal>
-                For dates and times of Rick's Drumming workshops please check the Herman Art's Website.
+                For dates and times of Rick's Drumming workshops please check
+                the Herman Art's Website.
               </TextNormal>
-              <Link href="https://www.hermon-arts.org.uk/whats-on" className="button">
-              <LinkText>Hermon Art's Website</LinkText>
+              <Link
+                href="https://www.hermon-arts.org.uk/whats-on"
+                className="button"
+              >
+                <LinkText>Hermon Art's Website</LinkText>
               </Link>
               <Link href="http://www.eastorywilsound.co.uk" className="button">
                 <LinkText>visit Rick's website</LinkText>

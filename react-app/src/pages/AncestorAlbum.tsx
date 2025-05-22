@@ -140,8 +140,8 @@ function AncestorAlbum() {
             <Lyrics key={p}>{p}</Lyrics>
           ))}
           <PurchaseText>
-            This album will be coming to spotify soon! You can listen to the
-            album on bandcamp, or purchase it for download or on CD.
+          You can listen to the album on bandcamp, or purchase it for download
+          or on CD. Also available on Spotify and other streaming platforms.
           </PurchaseText>
           <ButtonContainer>
             <Button
@@ -178,8 +178,8 @@ function AncestorAlbum() {
           <Lyrics key={p}>{p}</Lyrics>
         ))}
         <PurchaseText>
-          This album will be coming to spotify soon! You can listen to the album
-          on bandcamp, or purchase it for download or on CD.
+        You can listen to the album on bandcamp, or purchase it for download
+        or on CD. Also available on Spotify and other streaming platforms.
         </PurchaseText>
         <ButtonContainer>
           <Button

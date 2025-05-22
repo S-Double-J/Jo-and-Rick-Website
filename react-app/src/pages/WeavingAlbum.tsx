@@ -35,7 +35,7 @@ const TrackBox = styled.div`
   height: 90%;
   margin: 10px;
   overflow: auto;
-  @media (max-width: 500px){
+  @media (max-width: 500px) {
     width: 95%;
     height: 100%;
     margin: 0;
@@ -57,7 +57,6 @@ const DetailsContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
-
 `;
 const AlbumDescriptionsContainer = styled.div`
   display: flex;
@@ -102,7 +101,6 @@ const Button = styled.a`
   margin-right: 20px;
   text-decoration: none;
   margin-bottom: 20px;
-
 `;
 const ButtonContainer = styled.div`
   display: flex;
@@ -140,8 +138,8 @@ function WeavingAlbum() {
             <Lyrics key={p}>{p}</Lyrics>
           ))}
           <PurchaseText>
-            This album will be coming to spotify soon! You can listen to the
-            album on bandcamp, or purchase it for download or on CD.
+            You can listen to the album on bandcamp, or purchase it for download
+            or on CD. Also available on Spotify and other streaming platforms.
           </PurchaseText>
           <ButtonContainer>
             <Button
@@ -178,8 +176,8 @@ function WeavingAlbum() {
           <Lyrics key={p}>{p}</Lyrics>
         ))}
         <PurchaseText>
-          This album will be coming to spotify soon! You can listen to the album
-          on bandcamp, or purchase it for download or on CD.
+          You can listen to the album on bandcamp, or purchase it for download
+          or on CD. Also available on Spotify and other streaming platforms.
         </PurchaseText>
         <ButtonContainer>
           <Button
@@ -230,44 +228,44 @@ function WeavingAlbum() {
         </ColorFilter>
       );
     } else {
-    return (
-      <ColorFilter>
-        <TextBox>
-          <AlbumDescriptionsContainer>
-            <AlbumTitle>Weaving The World</AlbumTitle>
-            <AlbumDescription>
-              These songs are a celebration of the natural world. They tell of a
-              hidden, secret and ancient landscape on my doorstep and the voices
-              of the ancestors and wildlife living amongst them. The natural
-              world continues to be my greatest source of pleasure, inspiring my
-              writing, music and artwork. If we truly look at the world around
-              us, we start to remember we are part of it. In doing so we fall in
-              love with it, and then we begin to care. Maybe these are just love
-              songs then, love songs to the land.
-            </AlbumDescription>
-            <PurchaseText>
-              This album will be coming to spotify soon! You can listen to the
-              album on bandcamp, or purchase it for download or on CD.
-            </PurchaseText>
-            <ButtonContainer>
-              <Button
-                className="button"
-                href="https://jojukes.bandcamp.com/album/weaving-the-world"
-              >
-                <ButtonText>Buy Album</ButtonText>
-              </Button>
-            </ButtonContainer>
-            <ClickInstructions>
-              Click on an image to hear the song
-            </ClickInstructions>
-          </AlbumDescriptionsContainer>
-        </TextBox>
-        <TrackBox>
-          <WeavingImagesGrid></WeavingImagesGrid>
-        </TrackBox>
-      </ColorFilter>
-    );
-  }
+      return (
+        <ColorFilter>
+          <TextBox>
+            <AlbumDescriptionsContainer>
+              <AlbumTitle>Weaving The World</AlbumTitle>
+              <AlbumDescription>
+                These songs are a celebration of the natural world. They tell of
+                a hidden, secret and ancient landscape on my doorstep and the
+                voices of the ancestors and wildlife living amongst them. The
+                natural world continues to be my greatest source of pleasure,
+                inspiring my writing, music and artwork. If we truly look at the
+                world around us, we start to remember we are part of it. In
+                doing so we fall in love with it, and then we begin to care.
+                Maybe these are just love songs then, love songs to the land.
+              </AlbumDescription>
+              <PurchaseText>
+                This album will be coming to spotify soon! You can listen to the
+                album on bandcamp, or purchase it for download or on CD.
+              </PurchaseText>
+              <ButtonContainer>
+                <Button
+                  className="button"
+                  href="https://jojukes.bandcamp.com/album/weaving-the-world"
+                >
+                  <ButtonText>Buy Album</ButtonText>
+                </Button>
+              </ButtonContainer>
+              <ClickInstructions>
+                Click on an image to hear the song
+              </ClickInstructions>
+            </AlbumDescriptionsContainer>
+          </TextBox>
+          <TrackBox>
+            <WeavingImagesGrid></WeavingImagesGrid>
+          </TrackBox>
+        </ColorFilter>
+      );
+    }
   } else {
     if (window.innerWidth <= 500) {
       return (
@@ -295,35 +293,35 @@ function WeavingAlbum() {
         </ColorFilter>
       );
     } else {
-    return (
-      <>
-        <ColorFilter>
-          <TextBox>
-            <Routes>
-              {tracksObj.map((obj) => (
-                <Route
-                  path={obj.id}
-                  element={
-                    <CreateElement
-                      id={obj.id}
-                      title={obj.title}
-                      desc={obj.description}
-                      lyricsArr={obj.lyrics}
-                      audio={obj.audio}
-                    />
-                  }
-                />
-              ))}
-            </Routes>
-          </TextBox>
-          <TrackBox>
-            <WeavingImagesGrid></WeavingImagesGrid>
-          </TrackBox>
-        </ColorFilter>
-      </>
-    );
+      return (
+        <>
+          <ColorFilter>
+            <TextBox>
+              <Routes>
+                {tracksObj.map((obj) => (
+                  <Route
+                    path={obj.id}
+                    element={
+                      <CreateElement
+                        id={obj.id}
+                        title={obj.title}
+                        desc={obj.description}
+                        lyricsArr={obj.lyrics}
+                        audio={obj.audio}
+                      />
+                    }
+                  />
+                ))}
+              </Routes>
+            </TextBox>
+            <TrackBox>
+              <WeavingImagesGrid></WeavingImagesGrid>
+            </TrackBox>
+          </ColorFilter>
+        </>
+      );
+    }
   }
-}
 }
 
 export default WeavingAlbum;
