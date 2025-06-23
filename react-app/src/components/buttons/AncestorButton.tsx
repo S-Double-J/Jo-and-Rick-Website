@@ -21,9 +21,9 @@ const ButtonText = styled.p`
 
 function AncestorButton() {
   return (
-    <Button className="nav-button" to="the_ancestor_in_me">
+    <Button className="nav-button" to="being_human">
       <ButtonText className="nav-font">
-        THE ANCESTOR IN ME // AVAILABLE NOW
+        BEING HUMAN // AVAILABLE NOW
       </ButtonText>
     </Button>
   );

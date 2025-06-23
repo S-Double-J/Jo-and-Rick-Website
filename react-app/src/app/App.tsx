@@ -9,6 +9,7 @@ import AboutPage from "../pages/AboutPage";
 import styled from "styled-components";
 import Menu from "../components/HamburgerMenu";
 import { useState } from "react";
+import BHAlbum from "../pages/BHAlbum";
 
 const Container = styled.div`
   height: 100svh;
@@ -50,6 +51,7 @@ function App() {
           <Route path="the_ancestor_in_me/*" element={<AncestorAlbum />} />
           <Route path="weaving_the_world/*" element={<WeavingAlbum />} />
           <Route path="about" element={<AboutPage />} />
+          <Route path="being_human/*" element={<BHAlbum />} />
         </Routes>
       </Container>
     </BrowserRouter>

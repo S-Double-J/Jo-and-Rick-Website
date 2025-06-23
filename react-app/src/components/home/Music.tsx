@@ -10,14 +10,18 @@ const TitleBox = styled.div`
 `;
 const ButtonBox = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
   margin: 5px;
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 100vw;
   @media (max-width: 580px){
     flex-direction: column-reverse;
   }
+  overflow: auto;
 `;
-const AncestorBox = styled(Link)`
+const AlbumBox = styled(Link)`
   position: relative;
   width: 30rem;
   max-width: 660px;
@@ -51,40 +55,6 @@ const AncestorBox = styled(Link)`
     margin: 10px;
   }
 `;
-const WeavingBox = styled(Link)`
-  position: relative;
-  width: 30rem;
-  max-width: 660px;
-  min-width: 540px;
-  min-height: 540px;
-  height: 30rem;
-  max-height: 660px;
-  margin-left: 50px;
-  border-radius: 50%;
-    @media (max-width: 1200px){
-    width: 400px;
-    height: 400px;
-    min-height:400px;
-    min-width: 400px;
-  }
-    @media (max-width: 950px) {
-    width: 300px;
-    height: 300px;
-    min-height:300px;
-    min-width: 300px;
-    margin-left: 30px;
-  }
-    @media (max-width: 710px){
-    width: 250px;
-    height: 250px;
-    min-height:250px;
-    min-width: 250px;
-    margin-left: 20px
-  }
-  @media (max-width: 580px){
-    margin: 10px;
-  }
-`;
 const AncestorButton = styled.button`
   background-image: url("/Images/TheAncestorInMe/8-TheAncestorInMe.jpg");
   height: 100%;
@@ -113,6 +83,17 @@ const ColorFilter = styled.div`
 `;
 const WeavingButton = styled.button`
   background: url("/Images/Weaving the World/AlbumCover.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  border-radius: 50%;
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+`;
+const BHButton = styled.button`
+  background: url("/Images/Being Human/7-Being Human.jpg");
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -218,7 +199,7 @@ function Music() {
             <MusicTitle>MUSIC</MusicTitle>
           </TitleBox>
           <ButtonBox>
-            <AncestorBox className="music" to="the_ancestor_in_me">
+            <AlbumBox className="music" to="the_ancestor_in_me">
               <ColorFilter className="color-filter" />
               <Circle className="color-filter" />
               <AncestorButton> </AncestorButton>
@@ -227,8 +208,8 @@ function Music() {
               <ClickToSeeTracks className="color-filter">
                 CLICK TO SEE TRACKS
               </ClickToSeeTracks>
-            </AncestorBox>
-            <WeavingBox className="music" to="weaving_the_world">
+            </AlbumBox>
+            <AlbumBox className="music" to="weaving_the_world">
               <ColorFilter className="color-filter" />
               <Circle className="color-filter" />
               <WeavingButton></WeavingButton>
@@ -237,7 +218,17 @@ function Music() {
               <ClickToSeeTracks className="color-filter">
                 CLICK TO SEE TRACKS
               </ClickToSeeTracks>
-            </WeavingBox>
+            </AlbumBox>
+            <AlbumBox className="music" to="being_human">
+              <ColorFilter className="color-filter" />
+              <Circle className="color-filter" />
+              <BHButton />
+              <AlbumName className="color-filter">BEING HUMAN</AlbumName>
+              <Album className="color-filter">ALBUM</Album>
+              <ClickToSeeTracks className="color-filter">
+                CLICK TO SEE TRACKS
+              </ClickToSeeTracks>
+            </AlbumBox>
           </ButtonBox>
         </MusicBox>
       </section>
