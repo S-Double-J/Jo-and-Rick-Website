@@ -4,7 +4,12 @@ import WeavingImagesGrid from "../components/album_pages/weaving_the_world/Weavi
 import WeavingTracksObjArr from "../components/album_pages/weaving_the_world/tracks/WeavingTracksObjArr";
 import AudioPlayer from "../components/album_pages/AudioPlayer";
 import WeavingCarousel from "../components/album_pages/weaving_the_world/WeavingCarousel";
+import { FaSpotify } from "react-icons/fa";
 
+const Spotify = styled(FaSpotify)`
+  height: 40px;
+  width: 40px;
+`;
 const Lyrics = styled.p`
   font-size: 1.3rem;
 `;
@@ -97,14 +102,13 @@ const ClickInstructions = styled.p`
 const Button = styled.a`
   border-radius: 8rem;
   width: 8rem;
-  margin-left: 20px;
-  margin-right: 20px;
   text-decoration: none;
-  margin-bottom: 20px;
 `;
 const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 20px;
 `;
 const ButtonText = styled.p``;
 const PurchaseText = styled.p`
@@ -148,6 +152,9 @@ function WeavingAlbum() {
             >
               <ButtonText>Buy Album</ButtonText>
             </Button>
+           <a href="https://open.spotify.com/album/2TG9P4WyFk05zI4XqhTsML?si=Egv_Yi-WSgGb8JRUa6TkOA">
+              <Spotify className="icon" />
+            </a>
           </ButtonContainer>
         </DescriptonAndLyricsContainer>
       </DetailsContainer>
@@ -186,6 +193,9 @@ function WeavingAlbum() {
           >
             <ButtonText>Buy Album</ButtonText>
           </Button>
+         <a href="https://open.spotify.com/album/2TG9P4WyFk05zI4XqhTsML?si=Egv_Yi-WSgGb8JRUa6TkOA">
+              <Spotify className="icon" />
+            </a>
         </ButtonContainer>
       </DetailsContainer>
     );
@@ -209,8 +219,9 @@ function WeavingAlbum() {
                 Maybe these are just love songs then, love songs to the land.
               </AlbumDescription>
               <PurchaseText>
-                This album will be coming to spotify soon! You can listen to the
-                album on bandcamp, or purchase it for download or on CD.
+                You can listen to the album on bandcamp, or purchase it for
+                download or on CD. Also available on Spotify and other streaming
+                platforms.
               </PurchaseText>
               <ButtonContainer>
                 <Button
@@ -219,6 +230,9 @@ function WeavingAlbum() {
                 >
                   <ButtonText>Buy Album</ButtonText>
                 </Button>
+               <a href="https://open.spotify.com/album/2TG9P4WyFk05zI4XqhTsML?si=Egv_Yi-WSgGb8JRUa6TkOA">
+              <Spotify className="icon" />
+            </a>
               </ButtonContainer>
               <ClickInstructions>
                 Click on an image to hear the song
@@ -244,8 +258,9 @@ function WeavingAlbum() {
                 Maybe these are just love songs then, love songs to the land.
               </AlbumDescription>
               <PurchaseText>
-                This album will be coming to spotify soon! You can listen to the
-                album on bandcamp, or purchase it for download or on CD.
+                You can listen to the album on bandcamp, or purchase it for
+                download or on CD. Also available on Spotify and other streaming
+                platforms.
               </PurchaseText>
               <ButtonContainer>
                 <Button
@@ -254,6 +269,9 @@ function WeavingAlbum() {
                 >
                   <ButtonText>Buy Album</ButtonText>
                 </Button>
+               <a href="https://open.spotify.com/album/2TG9P4WyFk05zI4XqhTsML?si=Egv_Yi-WSgGb8JRUa6TkOA">
+              <Spotify className="icon" />
+            </a>
               </ButtonContainer>
               <ClickInstructions>
                 Click on an image to hear the song

@@ -4,6 +4,12 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import BeingHumanTracksObjArr from "../components/album_pages/being_human/tracks/BeingHumanTracksObjArr";
 import AudioPlayer from "../components/album_pages/AudioPlayer";
 import BHCarousel from "../components/album_pages/being_human/BHCarousel";
+import { FaSpotify } from "react-icons/fa";
+
+const Spotify = styled(FaSpotify)`
+  height: 40px;
+  width: 40px;
+`;
 const Lyrics = styled.p`
   font-size: 1.3rem;
 `;
@@ -99,14 +105,13 @@ const ClickInstructions = styled.p`
 const Button = styled.a`
   border-radius: 8rem;
   width: 8rem;
-  margin-left: 20px;
-  margin-right: 20px;
   text-decoration: none;
-  margin-bottom: 20px;
 `;
 const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 20px;
 `;
 const ButtonText = styled.p``;
 const PurchaseText = styled.p`
@@ -149,6 +154,9 @@ function BHAlbum() {
             >
               <ButtonText>Buy Album</ButtonText>
             </Button>
+            <a href="https://open.spotify.com/album/7aqR4wRMPJqMFmWKdmWDsR?si=CBKzaX2xSJS3PFnIPO0o6w">
+            <Spotify className="icon"/>
+            </a>
           </ButtonContainer>
         </DescriptonAndLyricsContainer>
       </DetailsContainer>
@@ -177,8 +185,8 @@ function BHAlbum() {
           <Lyrics key={p}>{p}</Lyrics>
         ))}
         <PurchaseText>
-          You can listen to the album on bandcamp, or purchase it for download
-          or on CD. Also available on Spotify and other streaming platforms.
+        You can listen to the album on bandcamp, or purchase it for download
+        or on CD. Also available on Spotify and other streaming platforms.
         </PurchaseText>
         <ButtonContainer>
           <Button
@@ -187,6 +195,9 @@ function BHAlbum() {
           >
             <ButtonText>Buy Album</ButtonText>
           </Button>
+          <a href="https://open.spotify.com/album/7aqR4wRMPJqMFmWKdmWDsR?si=CBKzaX2xSJS3PFnIPO0o6w">
+            <Spotify className="icon"/>
+            </a>
         </ButtonContainer>
       </DetailsContainer>
     );
@@ -214,8 +225,8 @@ function BHAlbum() {
                 Niall and Anne for their generous contributions.
               </AlbumDescription>
               <PurchaseText>
-                This album will be coming to spotify soon! You can listen to the
-                album on bandcamp, or purchase it for download or on CD.
+              You can listen to the album on bandcamp, or purchase it for download
+              or on CD. Also available on Spotify and other streaming platforms.
               </PurchaseText>
               <ButtonContainer>
                 <Button
@@ -224,6 +235,9 @@ function BHAlbum() {
                 >
                   <ButtonText>Buy Album</ButtonText>
                 </Button>
+                <a href="https://open.spotify.com/album/7aqR4wRMPJqMFmWKdmWDsR?si=CBKzaX2xSJS3PFnIPO0o6w">
+            <Spotify className="icon"/>
+            </a>
               </ButtonContainer>
               <ClickInstructions>
                 Click on an image to hear the song
@@ -253,8 +267,8 @@ function BHAlbum() {
                 Niall and Anne for their generous contributions.
               </AlbumDescription>
               <PurchaseText>
-                This album will be coming to spotify soon! You can listen to the
-                album on bandcamp, or purchase it for download or on CD.
+              You can listen to the album on bandcamp, or purchase it for download
+              or on CD. Also available on Spotify and other streaming platforms.
               </PurchaseText>
               <ButtonContainer>
                 <Button
@@ -263,6 +277,9 @@ function BHAlbum() {
                 >
                   <ButtonText>Buy Album</ButtonText>
                 </Button>
+                <a href="https://open.spotify.com/album/7aqR4wRMPJqMFmWKdmWDsR?si=CBKzaX2xSJS3PFnIPO0o6w">
+            <Spotify className="icon"/>
+            </a>
               </ButtonContainer>
               <ClickInstructions>
                 Click on an image to hear the song

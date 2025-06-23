@@ -172,3 +172,11 @@
   position: fixed;
   z-index: 20;
 }
+
+.icon {
+  color: rgb(0, 140, 255);
+  transition: 0.5s ease-in-out;
+}
+.icon:hover {
+  color: rgb(0, 35, 133);
+}
