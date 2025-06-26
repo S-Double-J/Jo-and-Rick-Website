@@ -174,6 +174,24 @@ function News() {
                   various saxophones and Anne Wood on violin.
                 </TextNormal>
               </NewAlbum>
+              <NewAlbum>
+                <TextLarge>Aldora Britain Records Interview</TextLarge>
+                <TextNormal>
+                  Exciting news - Jo and Rick feature in Aldora Britian Records
+                  Global Independaent & Underground Music E-Zine. Issue 368,
+                  Thursday 12th June. They really enjoyed answering some
+                  interesting and insightful questoins about how they write
+                  songs, move between instruments, play with rhythms and how
+                  their musical partnership has developed inline with their
+                  creative and personal journeys.
+                </TextNormal>
+                {/* <Link
+                      href="https://bit.ly/aldorabritainrecords-magazine-368"
+                      className="button"
+                    >
+                      <LinkText>Read the interview</LinkText>
+                    </Link> */}
+              </NewAlbum>
               <JoNewsBox>
                 <TextLargeBold>Jo's News</TextLargeBold>
                 <JoNewsInnerFrame>

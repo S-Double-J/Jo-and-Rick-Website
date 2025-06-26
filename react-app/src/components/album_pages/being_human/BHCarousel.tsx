@@ -15,7 +15,7 @@ function BHCarousel() {
     "/Images/Being Human/2-Awenydd.jpg",
     "/Images/Being Human/3-Rejoicing and Exalting.jpg",
     "/Images/Being Human/4-Standing Stone.jpg",
-    "/Images/Being Human/5-I am Making a Nest of my Hair.jpg",
+    "/Images/Being Human/5-I Am Making A Nest Of My Hair.jpg",
     "/Images/Being Human/6-Rain.jpg",
     "/Images/Being Human/7-Being Human.jpg",
     "/Images/Being Human/8-Stop This Worrying.jpg",

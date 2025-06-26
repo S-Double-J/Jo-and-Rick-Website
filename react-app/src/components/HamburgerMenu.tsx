@@ -52,8 +52,8 @@ function Menu({ active, setActive }: Props) {
                 <p className="nav-font">{page}</p>
               </HLink>
             ))}
-            <Link className="burger-button" to="the_ancestor_in_me">
-              <p className="nav-font">THE ANCESTOR IN ME // AVAILABLE NOW</p>
+            <Link className="burger-button" to="being_human">
+              <p className="nav-font">BEING HUMAN // AVAILABLE NOW</p>
             </Link>
           </HamburgerButtonContainer>
         </motion.div>

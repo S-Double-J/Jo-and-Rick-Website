@@ -93,7 +93,7 @@ const WeavingButton = styled.button`
   left: 0;
 `;
 const BHButton = styled.button`
-  background: url("/Images/Being Human/7-Being Human.jpg");
+  background: url("/Images/Being Human/Album_cover.jpg");
   height: 100%;
   width: 100%;
   background-size: cover;
