@@ -185,12 +185,12 @@ function News() {
                   their musical partnership has developed inline with their
                   creative and personal journeys.
                 </TextNormal>
-                {/* <Link
+                <Link
                       href="https://bit.ly/aldorabritainrecords-magazine-368"
                       className="button"
                     >
                       <LinkText>Read the interview</LinkText>
-                    </Link> */}
+                    </Link>
               </NewAlbum>
               <JoNewsBox>
                 <TextLargeBold>Jo's News</TextLargeBold>

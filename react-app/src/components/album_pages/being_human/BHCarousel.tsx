@@ -21,7 +21,7 @@ function BHCarousel() {
     "/Images/Being Human/8-Stop This Worrying.jpg",
     "/Images/Being Human/9-Rise Up.jpg",
     "/Images/Being Human/10-Crow Weaves Stories.jpg",
-    "/Images/Being Human/11-How Many Lives Have You Touched.jpg",
+    "/Images/Being Human/11-How Many Lives Did You Touch.jpg",
     "/Images/Being Human/12-Everything's Possible.jpg",
   ];;
   return (

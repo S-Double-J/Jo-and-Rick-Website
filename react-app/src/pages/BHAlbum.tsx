@@ -5,6 +5,7 @@ import BeingHumanTracksObjArr from "../components/album_pages/being_human/tracks
 import AudioPlayer from "../components/album_pages/AudioPlayer";
 import BHCarousel from "../components/album_pages/being_human/BHCarousel";
 import { FaSpotify } from "react-icons/fa";
+import React from "react";
 
 const Spotify = styled(FaSpotify)`
   height: 40px;
@@ -130,7 +131,7 @@ function BHAlbum() {
     id: string;
     title: string;
     desc: string;
-    lyricsArr: string[];
+    lyricsArr: string[][];
     audio: string;
   }) {
     return (
@@ -140,9 +141,16 @@ function BHAlbum() {
         <DescriptonAndLyricsContainer>
           <TrackDescription>{desc}</TrackDescription>
           <LyricsTitle>Lyrics</LyricsTitle>
-          {lyricsArr.map((p) => (
-            <Lyrics key={p}>{p}</Lyrics>
+          <Lyrics>
+          {lyricsArr.map((p, i) => (
+            <React.Fragment key={i}>
+              {p.map((l, i) => {
+                return <><span key={i}>{l}</span><br/></>;
+              })}<br/><br/>
+              
+            </React.Fragment>
           ))}
+        </Lyrics>
           <PurchaseText>
             You can listen to the album on bandcamp, or purchase it for download
             or on CD. Also available on Spotify and other streaming platforms.
@@ -155,7 +163,7 @@ function BHAlbum() {
               <ButtonText>Buy Album</ButtonText>
             </Button>
             <a href="https://open.spotify.com/album/7aqR4wRMPJqMFmWKdmWDsR?si=CBKzaX2xSJS3PFnIPO0o6w">
-            <Spotify className="icon"/>
+              <Spotify className="icon" />
             </a>
           </ButtonContainer>
         </DescriptonAndLyricsContainer>
@@ -172,7 +180,7 @@ function BHAlbum() {
     id: string;
     title: string;
     desc: string;
-    lyricsArr: string[];
+    lyricsArr: string[][];
     audio: string;
   }) {
     return (
@@ -181,12 +189,19 @@ function BHAlbum() {
         <AudioPlayer id={id} src={audio}></AudioPlayer>
         <TrackDescription>{desc}</TrackDescription>
         <LyricsTitle>Lyrics</LyricsTitle>
-        {lyricsArr.map((p) => (
-          <Lyrics key={p}>{p}</Lyrics>
-        ))}
+        <Lyrics>
+          {lyricsArr.map((p, i) => (
+            <React.Fragment key={i}>
+              {p.map((l, i) => {
+                return <><span key={i}>{l}</span><br/></>;
+              })}<br/><br/>
+              
+            </React.Fragment>
+          ))}
+        </Lyrics>
         <PurchaseText>
-        You can listen to the album on bandcamp, or purchase it for download
-        or on CD. Also available on Spotify and other streaming platforms.
+          You can listen to the album on bandcamp, or purchase it for download
+          or on CD. Also available on Spotify and other streaming platforms.
         </PurchaseText>
         <ButtonContainer>
           <Button
@@ -196,8 +211,8 @@ function BHAlbum() {
             <ButtonText>Buy Album</ButtonText>
           </Button>
           <a href="https://open.spotify.com/album/7aqR4wRMPJqMFmWKdmWDsR?si=CBKzaX2xSJS3PFnIPO0o6w">
-            <Spotify className="icon"/>
-            </a>
+            <Spotify className="icon" />
+          </a>
         </ButtonContainer>
       </DetailsContainer>
     );
@@ -225,8 +240,9 @@ function BHAlbum() {
                 Niall and Anne for their generous contributions.
               </AlbumDescription>
               <PurchaseText>
-              You can listen to the album on bandcamp, or purchase it for download
-              or on CD. Also available on Spotify and other streaming platforms.
+                You can listen to the album on bandcamp, or purchase it for
+                download or on CD. Also available on Spotify and other streaming
+                platforms.
               </PurchaseText>
               <ButtonContainer>
                 <Button
@@ -236,8 +252,8 @@ function BHAlbum() {
                   <ButtonText>Buy Album</ButtonText>
                 </Button>
                 <a href="https://open.spotify.com/album/7aqR4wRMPJqMFmWKdmWDsR?si=CBKzaX2xSJS3PFnIPO0o6w">
-            <Spotify className="icon"/>
-            </a>
+                  <Spotify className="icon" />
+                </a>
               </ButtonContainer>
               <ClickInstructions>
                 Click on an image to hear the song
@@ -267,8 +283,9 @@ function BHAlbum() {
                 Niall and Anne for their generous contributions.
               </AlbumDescription>
               <PurchaseText>
-              You can listen to the album on bandcamp, or purchase it for download
-              or on CD. Also available on Spotify and other streaming platforms.
+                You can listen to the album on bandcamp, or purchase it for
+                download or on CD. Also available on Spotify and other streaming
+                platforms.
               </PurchaseText>
               <ButtonContainer>
                 <Button
@@ -278,8 +295,8 @@ function BHAlbum() {
                   <ButtonText>Buy Album</ButtonText>
                 </Button>
                 <a href="https://open.spotify.com/album/7aqR4wRMPJqMFmWKdmWDsR?si=CBKzaX2xSJS3PFnIPO0o6w">
-            <Spotify className="icon"/>
-            </a>
+                  <Spotify className="icon" />
+                </a>
               </ButtonContainer>
               <ClickInstructions>
                 Click on an image to hear the song
@@ -319,7 +336,6 @@ function BHAlbum() {
         </ColorFilter>
       );
     } else {
-      console.log("obj :", tracksObj)
       return (
         <>
           <ColorFilter>
