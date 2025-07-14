@@ -178,11 +178,11 @@ function News() {
                 <TextLarge>Aldora Britain Records Interview</TextLarge>
                 <TextNormal>
                   Exciting news - Jo and Rick feature in Aldora Britian Records
-                  Global Independaent & Underground Music E-Zine. Issue 368,
+                  Global Independent & Underground Music E-Zine. Issue 368,
                   Thursday 12th June. They really enjoyed answering some
-                  interesting and insightful questoins about how they write
+                  interesting and insightful questions about how they write
                   songs, move between instruments, play with rhythms and how
-                  their musical partnership has developed inline with their
+                  their musical partnership has developed in line with their
                   creative and personal journeys.
                 </TextNormal>
                 <Link
