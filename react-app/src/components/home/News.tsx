@@ -232,14 +232,6 @@ function News() {
                       well as with private groups running a variety of workshops
                       showing how connection to the land can influence and
                       inspire creative expression.
-                      <br />
-                      <br />
-                      This year Jo will be collaborating with a poet and nature
-                      photographer Phil Barnet (Birds Knit my Bones Together),
-                      running her art and poetry workshop on ‘Connecting to
-                      Nature’ and featuring a new song ‘I am making a nest of my
-                      hair’ with a series of natural sculpture workshops based
-                      around the theme of nests and protection.
                     </TextNormal>
                     <Link
                       href="https://jojukes.wordpress.com/"
