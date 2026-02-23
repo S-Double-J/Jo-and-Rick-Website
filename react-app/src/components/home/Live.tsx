@@ -335,6 +335,7 @@ function Live() {
           </tr>
           {liveTableObjectArray.map(
             ({ date, event, location, link }, index) => (
+              link === "-" ?
               <tr
                 key={index}
               >
@@ -349,6 +350,13 @@ function Live() {
 
                   </TableInfoButton>
                 </TdButton>
+              </tr> :  <tr
+                key={index}
+              >
+                <Td>{date}</Td>
+                <TdEvent>{event}</TdEvent>
+                <Td>{location}</Td>
+               <Td>Info available soon</Td>
               </tr>
             )
           )}
