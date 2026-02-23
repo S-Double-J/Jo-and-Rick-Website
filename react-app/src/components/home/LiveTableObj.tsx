@@ -1,5 +1,31 @@
 const liveTableObjectArray = [
   {
+    date: "19.06.2026",
+    event: "WE ARE ALL TREES FESTIVAL",
+    location: "FELL FOOT WOOD, LAKE WINDERMERE, CUMBRIA",
+    link: "https://feelgoodcommunities.org/event/we-are-all-trees-a-micro-festival-in-the-woods/",
+  },{
+    date: "13.06.2026",
+    event: "STORY TO SONG CREATIVE WORDS AND MUSIC WORKSHOP @ 1pm",
+    location: "DUNVEGAN VILLAGE HALL, ISLE OF SKYE",
+    link: "-",
+  },  {
+    date: "12.06.2026",
+    event: "PERFORMANCE @ 7.30pm",
+    location: "DUNVEGAN VILLAGE HALL, ISLE OF SKYE",
+    link: "-",
+  },  {
+    date: "02.05.2026",
+    event: "UNIQUE FUNDRAISING CONCERT FOR LLANSILIN HERITAGE PROJECT @ 7.30pm",
+    location: "ST SILINS CHURCH, LLANSILIN, POWYS",
+    link: "-",
+  },  {
+    date: "17.03.2026",
+    event: "SALFORD CITY RADIO'S WITCHES HOUR @ 2pm",
+    location: "RADIO",
+    link: "https://www.salfordcityradio.org/shows.php?id=2329",
+  },
+  {
     date: "03.06.2025",
     event: "SALFORD CITY RADIO'S WITCHES HOUR @ 2pm",
     location: "RADIO",
