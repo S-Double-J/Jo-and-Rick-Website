@@ -154,24 +154,28 @@ function News() {
             <LatestNewsBox>
               <TextLargeBold>Latest News</TextLargeBold>
               <NewAlbum>
-                <TextLarge>Jo and Rick's Third Album</TextLarge>
+                <TextLarge>Jo and Rick's Fourth Album and New Band</TextLarge>
                 <TextNormal>
-                  Jo and Rick have been working really hard on their third album
-                  ‘Being Human’ and are really excited to announce that it is
-                  now available on Bandcamp, Spotify and other streaming
-                  platforms, with a limited edition CD.
+                  Since the release of ‘Being Human' last May, Jo has been
+                  writing lots of new songs. These songs have a theme in that
+                  many of them feature birds, hence the choice of the next album
+                  title 'Nest Material'. As the songs have been percolating and
+                  taking shape, new musical developments are also happening.
                   <br />
-                  Their music has expanded in depth and expression as their
-                  working relationship has become more unified. It still remains
-                  hard to classify but their ability to shift between
-                  instruments and styles, yet still retain their unique
-                  character is undeniable.
+                  Jo and Rick are back in the studio with long time friend and
+                  collaborator Niall Ross on saxophone but also have an exciting
+                  addition to their sound in bass player Richard Yale of 'Dead
+                  Can Dance' fame. As a quartet they will be known as 'Alive
+                  With Wings' with a first airing on for this lineup on May 2nd
+                  in the beautiful and historical St Silin's church in Llansiln
+                  to raise funds for the Treftadaeth Llansiln Heritage Project.
                   <br />
-                  This album focusses on what it is to be human, the emotions,
-                  the challenges, the relationships between people, places and
-                  the natural world. <br />
-                  They have collaborated further with friend Niall Ross on
-                  various saxophones and Anne Wood on violin.
+                  This will be closely followed on 22nd May by a band gig at
+                  Hafon Yr Afon in Newtown, Powys with largely new material.
+                  <br />
+                  You can also catch Jo and Rick as their original ‘disobedient
+                  folk’ duo at the Chirk Canal Celebration Day on Sunday March
+                  22nd and in Skye and Cumbria in June.
                 </TextNormal>
               </NewAlbum>
               <NewAlbum>
@@ -186,11 +190,11 @@ function News() {
                   creative and personal journeys.
                 </TextNormal>
                 <Link
-                      href="https://bit.ly/aldorabritainrecords-magazine-368"
-                      className="button"
-                    >
-                      <LinkText>Read the interview</LinkText>
-                    </Link>
+                  href="https://bit.ly/aldorabritainrecords-magazine-368"
+                  className="button"
+                >
+                  <LinkText>Read the interview</LinkText>
+                </Link>
               </NewAlbum>
               <JoNewsBox>
                 <TextLargeBold>Jo's News</TextLargeBold>
@@ -215,12 +219,6 @@ function News() {
                       Shropshire' and ‘Finding Beauty – A Year of Nature Outside
                       Your Door’ are still available for purchase.
                     </TextNormal>
-                    <Link
-                      href="https://www.etsy.com/uk/shop/WolfwordsShop?ref=shop-header-name&listing_id=1614372614&from_page=listing"
-                      className="button"
-                    >
-                      <LinkText>Purchase Jo's Book</LinkText>
-                    </Link>
                   </JoNewsInnerBox>
                   <JoNewsInnerBox>
                     <TextLarge>Workshops</TextLarge>
@@ -245,8 +243,9 @@ function News() {
                     <TextNormal>
                       As part of the Twelve Artisans collective, Jo will be
                       selling her art, jewellery, books and CDs at the Twelve
-                      Artisans Collective and has a solo art exhibition of her
-                      work at The Guildhall, Much Wenlock in August.
+                      Artisans Collective, has work in local galleries and shops
+                      and an exhibition in The Bear Steps Gallery in Shrewsbury
+                      come August 2026.
                     </TextNormal>
                     <SocialBox>
                       <SocialLink href="https://www.facebook.com/profile.php?id=100095584871985">
