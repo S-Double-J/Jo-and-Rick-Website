@@ -117,7 +117,14 @@ const PopUpBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 15px;
+    border: 2px solid white;
+    border-radius: 3%;
+    pointer-events: none;
+  }
   @media (max-width: 500px) {
     width: 400px;
     height: 400px;
@@ -157,12 +164,11 @@ const PopUpTextRegular = styled.p`
   }
 `;
 const PopUpButton = styled.a`
+  display: flex;
   padding: 8px;
   margin: 8px;
   border: 2px solid white;
-  display: flex;
   align-items: center;
-  justify-content: center;
   border-radius: 50px;
   font-size: 16px;
   text-decoration: none;
