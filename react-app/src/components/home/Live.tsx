@@ -197,10 +197,51 @@ function Live() {
   const handleClickHughLupton: ClickHandler = () => {
     setActiveHughLupton((prevValue) => !prevValue);
   };
-  const [activeUllapool, setActiveUllapool] = useState(false);
-  const handleClickUllapool: ClickHandler = () => {
-    setActiveUllapool((prevValue) => !prevValue);
-  };
+const ConditionalComponent: React.FC<{ index: number, date: string, event: string, location: string, link: string }> = ({ index, date, event, location, link }) => {
+  if (link === '-') {
+    return <tr
+                key={index}
+              >
+                <Td>{date}</Td>
+                <TdEvent>{event}</TdEvent>
+                <Td>{location}</Td>
+               <Td>Info available soon</Td>
+              </tr>;
+  } else {
+    if (link === 'pop-up') {
+      return <tr
+                key={index}
+              >
+                <Td>{date}</Td>
+                <TdEvent>{event}</TdEvent>
+                <Td>{location}</Td>
+                <TdButton>
+                  <Button href={link} className="button-small">
+                    <ButtonText className="font-color" onClick={handleClickHughLupton}>MORE INFO</ButtonText>
+                  </Button>
+                  <TableInfoButton>
+
+                  </TableInfoButton>
+                </TdButton>
+              </tr> 
+    }
+  } return <tr
+                key={index}
+              >
+                <Td>{date}</Td>
+                <TdEvent>{event}</TdEvent>
+                <Td>{location}</Td>
+                <TdButton>
+                  <Button href={link} className="button-small">
+                    <ButtonText className="font-color">MORE INFO</ButtonText>
+                  </Button>
+                  <TableInfoButton>
+
+                  </TableInfoButton>
+                </TdButton>
+              </tr> 
+  
+};
   return (
     <section id="Live">
       <TableBox>
@@ -246,84 +287,20 @@ function Live() {
                 }}
               />
             </CloseButton>
-            <PopUpTextLarge>HUGH LUPTON'S SUMMER SERIES</PopUpTextLarge>
+            <PopUpTextLarge>LLANSILIN HERITAGE PROJECT</PopUpTextLarge>
             <PopUpTextRegular>
-              This event takes payment at the door. However, advanced booking is
-              essential.
+              To book your ticket for this event please email Mary Cunnah at
             </PopUpTextRegular>
-            <PopUpTextRegular>Please email Hugh Lupton at</PopUpTextRegular>
             <PopUpButton
               className="button-small"
-              href="mailto:hughlupton@gmail.com"
+              href="mailto:marycunnah@yahoo.co.uk"
             >
-              hughlupton@gmail.com
+              marycunnah@yahoo.co.uk
             </PopUpButton>
             <PopUpTextRegular>
-              in order to book. In your email please include the number of
+              In your email please include the number of
               tickets required and your full name.
             </PopUpTextRegular>
-            <PopUpTextRegular>
-              Tickets are £15 each. Performances start at 7:30.
-            </PopUpTextRegular>
-            <PopUpTextRegular>
-              Location: Hugh's Barn Stapleton Farm Valley Lane Aylsham NR11 6GR
-            </PopUpTextRegular>
-          </PopUpBox>
-        </motion.div>
-        <motion.div
-          variants={{
-            open: {
-              display: "flex",
-            },
-            closed: {
-              display: "none",
-            },
-          }}
-          animate={activeUllapool ? "open" : "closed"}
-          initial={false}
-        >
-          <PopUpBox>
-            <CloseButton onClick={handleClickUllapool}>
-              <motion.span
-                style={{
-                  background: "white",
-                  width: "30px",
-                  height: "2px",
-                  rotate: "45deg",
-                  position: "absolute",
-                  top: "50%",
-                  left: "50%",
-                  x: "-50%",
-                  y: "-50%",
-                }}
-              />
-              <motion.span
-                style={{
-                  background: "white",
-                  width: "30px",
-                  height: "2px",
-                  rotate: "-45deg",
-                  position: "absolute",
-                  top: "50%",
-                  left: "50%",
-                  x: "-50%",
-                  y: "-50%",
-                }}
-              />
-            </CloseButton>
-            <PopUpTextLarge>JO AND RICK AT ULLAPOOL</PopUpTextLarge>
-            <PopUpTextRegular>
-              This event is FREE and NO BOOKING is REQUIRED.
-            </PopUpTextRegular>
-            <PopUpTextRegular style={{ marginBottom: "20px" }}>
-              Please simply arrive at the Argyll Hotel for a 9pm start.
-            </PopUpTextRegular>
-            <PopUpTextRegular style={{ marginBottom: "20px" }}>
-              Address:
-            </PopUpTextRegular>
-            <PopUpTextRegular>Argyll Hotel,</PopUpTextRegular>
-            <PopUpTextRegular>Ullapool,</PopUpTextRegular>
-            <PopUpTextRegular>IV26 2UB</PopUpTextRegular>
           </PopUpBox>
         </motion.div>
         <StyledTable>
@@ -335,51 +312,10 @@ function Live() {
           </tr>
           {liveTableObjectArray.map(
             ({ date, event, location, link }, index) => (
-              link === "-" ? <tr
-                key={index}
-              >
-                <Td>{date}</Td>
-                <TdEvent>{event}</TdEvent>
-                <Td>{location}</Td>
-               <Td>Info available soon</Td>
-              </tr> :
-              <tr
-                key={index}
-              >
-                <Td>{date}</Td>
-                <TdEvent>{event}</TdEvent>
-                <Td>{location}</Td>
-                <TdButton>
-                  <Button href={link} className="button-small">
-                    <ButtonText className="font-color">MORE INFO</ButtonText>
-                  </Button>
-                  <TableInfoButton>
-
-                  </TableInfoButton>
-                </TdButton>
-              </tr> 
+              <ConditionalComponent index={index} date={date} event={event} location={location} link={link}/>
             )
           )}
-          <tr>
-            <Td>10.08.2024</Td>
-            <TdEvent>JO AND RICK @ HUGH LUPTON'S SUMMER SERIES</TdEvent>
-            <Td>NORFOLK</Td>
-            <TdButton>
-              <Button className="button-small" onClick={handleClickHughLupton}>
-                <ButtonText className="font-color">MORE INFO</ButtonText>
-              </Button>
-            </TdButton>
-          </tr>
-          <tr>
-            <Td>24.08.2024</Td>
-            <TdEvent>JO AND RICK WITH ANNE WOOD</TdEvent>
-            <Td>ULLAPOOL</Td>
-            <TdButton>
-              <Button className="button-small" onClick={handleClickUllapool}>
-                <ButtonText className="font-color">MORE INFO</ButtonText>
-              </Button>
-            </TdButton>
-          </tr>
+
         </StyledTable>
       </TableBox>
     </section>

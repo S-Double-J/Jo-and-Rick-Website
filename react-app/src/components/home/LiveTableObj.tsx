@@ -1,71 +1,50 @@
 const liveTableObjectArray = [
   {
+    date: "11.07.2026",
+    event: "‘Alive With Wings' FOUR PIECE BAND",
+    location: "HERMON ARTS, OSWESTRY",
+    link: "https://www.hermonarts.co.uk/",
+  },  {
     date: "19.06.2026",
     event: "WE ARE ALL TREES FESTIVAL",
     location: "FELL FOOT WOOD, LAKE WINDERMERE, CUMBRIA",
     link: "https://feelgoodcommunities.org/event/we-are-all-trees-a-micro-festival-in-the-woods/",
-  },{
+  },
+  {
     date: "13.06.2026",
     event: "STORY TO SONG CREATIVE WORDS AND MUSIC WORKSHOP @ 1pm",
     location: "DUNVEGAN VILLAGE HALL, ISLE OF SKYE",
     link: "-",
-  },  {
+  },
+  {
     date: "12.06.2026",
     event: "PERFORMANCE @ 7.30pm",
     location: "DUNVEGAN VILLAGE HALL, ISLE OF SKYE",
     link: "-",
-  },  {
+  },
+  {
+    date: "22.05.2026",
+    event: "‘Alive With Wings' THREE PIECE BAND @ 7.30pm",
+    location: "HAFON YR AFON, NEWTOWN",
+    link: "https://opennewtown.org.uk/hafan-yr-afon/",
+  },
+  {
     date: "02.05.2026",
-    event: "UNIQUE FUNDRAISING CONCERT FOR LLANSILIN HERITAGE PROJECT @ 7.30pm",
+    event: "‘Alive With Wings' THREE PIECE BAND @ 7.30pm",
     location: "ST SILINS CHURCH, LLANSILIN, POWYS",
     link: "-",
-  },  {
-    date: "17.03.2026",
-    event: "SALFORD CITY RADIO'S WITCHES HOUR @ 2pm",
+  },
+  {
+    date: "14.04.26",
+    event: "Salford City Radio Witches Hour @ 2pm",
     location: "RADIO",
-    link: "https://www.salfordcityradio.org/shows.php?id=2329",
+    link: "https://player.autopod.xyz/1234420?fbclid=IwdGRjcAQma6VjbGNrBCZriWV4dG4DYWVtAjExAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHozI67LdHcUDP7Bc1EViOlc2HyPJisaWjGwyNVCdLA45lCtmH53OHBsRbt0p_aem_MRAM1kHgWM-cH_a4On2jJQ",
   },
   {
-    date: "03.06.2025",
-    event: "SALFORD CITY RADIO'S WITCHES HOUR @ 2pm",
-    location: "RADIO",
-    link: "https://www.salfordcityradio.org/shows.php?id=2329",
-  },
-  {
-    date: "09.05.2025",
-    event: "HERMON ARTS @ 7.30pm",
-    location: "OSWESTRY",
-    link: "https://www.hermon-arts.org.uk/events/rick-jo",
-  },
-  {
-    date: "21.01.2025",
-    event: "SALFORD CITY RADIO'S WITCHES HOUR @ 2pm",
-    location: "RADIO",
-    link: "https://www.salfordcityradio.org/shows.php?id=2329",
-  },
-  {
-    date: "08.10.2024",
-    event: "SALFORD CITY RADIO'S WITCHES HOUR",
-    location: "RADIO",
-    link: "https://www.salfordcityradio.org/shows.php?id=2329",
-  },
-  {
-    date: "04.10.2024",
-    event: "REAL FOOD & FARMING CONVERGENCE",
-    location: "OSWESTRY",
-    link: "https://www.mrffc.uk/",
-  },
-  {
-    date: "21.07.2024",
-    event: "JO AND RICK @ THE FESTIVAL AT THE EDGE",
-    location: "CLEOBURY MORTIMER",
-    link: "https://www.festivalattheedge.org/about/full-programme-2024/",
-  },
-  {
-    date: "28.06.2024",
-    event: "JO AND RICK // THE ANCESTOR IN ME",
-    location: "OSWESTRY",
-    link: "https://www.hermon-arts.org.uk/events/rick-wilson-jo-jukes-1",
+    date: "22.03.26",
+    event: "Chirk Canal Celebration Day",
+    location: "Chirk Aqueduct",
+    link: "https://www.eventbrite.com",
   },
 ];
 export default liveTableObjectArray;

@@ -291,7 +291,7 @@ function News() {
               </TextNormal>
               <TextNormal>
                 For dates and times of Rick's Drumming workshops please check
-                the Herman Art's Website.
+                the Hermon Arts Website.
               </TextNormal>
               <Link
                 href="https://www.hermon-arts.org.uk/whats-on"
