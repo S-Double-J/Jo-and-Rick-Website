@@ -216,7 +216,7 @@ const ConditionalComponent: React.FC<{ index: number, date: string, event: strin
                 <TdEvent>{event}</TdEvent>
                 <Td>{location}</Td>
                 <TdButton>
-                  <Button className="button-small">
+                  <Button href={link} className="button-small">
                     <ButtonText className="font-color" onClick={handleClickHughLupton}>MORE INFO</ButtonText>
                   </Button>
                   <TableInfoButton>
@@ -292,6 +292,7 @@ const ConditionalComponent: React.FC<{ index: number, date: string, event: strin
               To book your ticket for this event please email Mary Cunnah at
             </PopUpTextRegular>
             <PopUpButton
+              className="button-small"
               href="mailto:marycunnah@yahoo.co.uk"
             >
               marycunnah@yahoo.co.uk

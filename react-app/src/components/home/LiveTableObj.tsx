@@ -32,7 +32,7 @@ const liveTableObjectArray = [
     date: "02.05.2026",
     event: "‘Alive With Wings' THREE PIECE BAND @ 7.30pm",
     location: "ST SILINS CHURCH, LLANSILIN, POWYS",
-    link: "pop-up",
+    link: "-",
   },
   {
     date: "14.04.26",
