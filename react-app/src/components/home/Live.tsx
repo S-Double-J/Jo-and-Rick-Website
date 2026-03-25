@@ -216,7 +216,7 @@ const ConditionalComponent: React.FC<{ index: number, date: string, event: strin
                 <TdEvent>{event}</TdEvent>
                 <Td>{location}</Td>
                 <TdButton>
-                  <Button href={link} className="button-small">
+                  <Button className="button-small">
                     <ButtonText className="font-color" onClick={handleClickHughLupton}>MORE INFO</ButtonText>
                   </Button>
                   <TableInfoButton>
