@@ -2,7 +2,6 @@ import styled from "styled-components";
 import liveTableObjectArray from "./LiveTableObj";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import TableInfoButton from "../buttons/TableInfoButton";
 
 const TableBox = styled.div`
   display: flex;
@@ -118,13 +117,7 @@ const PopUpBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 15px;
-    border: 2px solid white;
-    border-radius: 3%;
-  }
+
   @media (max-width: 500px) {
     width: 400px;
     height: 400px;
@@ -164,9 +157,12 @@ const PopUpTextRegular = styled.p`
   }
 `;
 const PopUpButton = styled.a`
-  width: 198px;
-  height: 36px;
-  border: none;
+  padding: 8px;
+  margin: 8px;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50px;
   font-size: 16px;
   text-decoration: none;
@@ -197,51 +193,56 @@ function Live() {
   const handleClickHughLupton: ClickHandler = () => {
     setActiveHughLupton((prevValue) => !prevValue);
   };
-const ConditionalComponent: React.FC<{ index: number, date: string, event: string, location: string, link: string }> = ({ index, date, event, location, link }) => {
-  if (link === '-') {
-    return <tr
-                key={index}
-              >
-                <Td>{date}</Td>
-                <TdEvent>{event}</TdEvent>
-                <Td>{location}</Td>
-               <Td>Info available soon</Td>
-              </tr>;
-  } else {
-    if (link === 'pop-up') {
-      return <tr
-                key={index}
-              >
-                <Td>{date}</Td>
-                <TdEvent>{event}</TdEvent>
-                <Td>{location}</Td>
-                <TdButton>
-                  <Button href={link} className="button-small">
-                    <ButtonText className="font-color" onClick={handleClickHughLupton}>MORE INFO</ButtonText>
-                  </Button>
-                  <TableInfoButton>
-
-                  </TableInfoButton>
-                </TdButton>
-              </tr> 
+  const ConditionalComponent: React.FC<{
+    index: number;
+    date: string;
+    event: string;
+    location: string;
+    link: string;
+  }> = ({ index, date, event, location, link }) => {
+    if (link === "-") {
+      return (
+        <tr key={index}>
+          <Td>{date}</Td>
+          <TdEvent>{event}</TdEvent>
+          <Td>{location}</Td>
+          <Td>Info available soon</Td>
+        </tr>
+      );
+    } else {
+      if (link === "pop-up") {
+        return (
+          <tr key={index}>
+            <Td>{date}</Td>
+            <TdEvent>{event}</TdEvent>
+            <Td>{location}</Td>
+            <TdButton>
+              <Button className="button-small">
+                <ButtonText
+                  className="font-color"
+                  onClick={handleClickHughLupton}
+                >
+                  MORE INFO
+                </ButtonText>
+              </Button>
+            </TdButton>
+          </tr>
+        );
+      }
     }
-  } return <tr
-                key={index}
-              >
-                <Td>{date}</Td>
-                <TdEvent>{event}</TdEvent>
-                <Td>{location}</Td>
-                <TdButton>
-                  <Button href={link} className="button-small">
-                    <ButtonText className="font-color">MORE INFO</ButtonText>
-                  </Button>
-                  <TableInfoButton>
-
-                  </TableInfoButton>
-                </TdButton>
-              </tr> 
-  
-};
+    return (
+      <tr key={index}>
+        <Td>{date}</Td>
+        <TdEvent>{event}</TdEvent>
+        <Td>{location}</Td>
+        <TdButton>
+          <Button href={link} className="button-small">
+            <ButtonText className="font-color">MORE INFO</ButtonText>
+          </Button>
+        </TdButton>
+      </tr>
+    );
+  };
   return (
     <section id="Live">
       <TableBox>
@@ -295,11 +296,11 @@ const ConditionalComponent: React.FC<{ index: number, date: string, event: strin
               className="button-small"
               href="mailto:marycunnah@yahoo.co.uk"
             >
-              marycunnah@yahoo.co.uk
+              <PopUpTextRegular>marycunnah@yahoo.co.uk</PopUpTextRegular>
             </PopUpButton>
             <PopUpTextRegular>
-              In your email please include the number of
-              tickets required and your full name.
+              In your email please include the number of tickets required and
+              your full name.
             </PopUpTextRegular>
           </PopUpBox>
         </motion.div>
@@ -312,10 +313,15 @@ const ConditionalComponent: React.FC<{ index: number, date: string, event: strin
           </tr>
           {liveTableObjectArray.map(
             ({ date, event, location, link }, index) => (
-              <ConditionalComponent index={index} date={date} event={event} location={location} link={link}/>
-            )
+              <ConditionalComponent
+                index={index}
+                date={date}
+                event={event}
+                location={location}
+                link={link}
+              />
+            ),
           )}
-
         </StyledTable>
       </TableBox>
     </section>
