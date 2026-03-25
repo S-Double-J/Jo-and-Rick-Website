@@ -292,7 +292,6 @@ const ConditionalComponent: React.FC<{ index: number, date: string, event: strin
               To book your ticket for this event please email Mary Cunnah at
             </PopUpTextRegular>
             <PopUpButton
-              className="button-small"
               href="mailto:marycunnah@yahoo.co.uk"
             >
               marycunnah@yahoo.co.uk
