@@ -24,13 +24,13 @@ const liveTableObjectArray = [
   },
   {
     date: "22.05.2026",
-    event: "‘Alive With Wings' THREE PIECE BAND @ 7.30pm",
+    event: "‘Alive With Wings' FOUR PIECE BAND @ 7.30pm",
     location: "HAFON YR AFON, NEWTOWN",
     link: "https://opennewtown.org.uk/hafan-yr-afon/",
   },
   {
     date: "02.05.2026",
-    event: "‘Alive With Wings' THREE PIECE BAND @ 7.30pm",
+    event: "‘Alive With Wings' FOUR PIECE BAND @ 7.30pm",
     location: "ST SILINS CHURCH, LLANSILIN, POWYS",
     link: "pop-up",
   },
