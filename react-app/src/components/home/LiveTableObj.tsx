@@ -3,7 +3,7 @@ const liveTableObjectArray = [
     date: "11.07.2026",
     event: "‘Alive With Wings' FOUR PIECE BAND",
     location: "HERMON ARTS, OSWESTRY",
-    link: "https://www.hermonarts.co.uk/",
+    link: "https://www.ticketsource.com/hermon-arts/alive-with-wings/e-yzzvvq",
   },  {
     date: "19.06.2026",
     event: "WE ARE ALL TREES FESTIVAL",
@@ -26,7 +26,7 @@ const liveTableObjectArray = [
     date: "22.05.2026",
     event: "‘Alive With Wings' FOUR PIECE BAND @ 7.30pm",
     location: "HAFON YR AFON, NEWTOWN",
-    link: "https://opennewtown.org.uk/hafan-yr-afon/",
+    link: "https://www.hafanyrafon.com/event-details/alive-with-wings-jo-jukes-rick-wilson-band",
   },
   {
     date: "02.05.2026",
