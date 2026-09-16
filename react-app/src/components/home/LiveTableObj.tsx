@@ -1,4 +1,9 @@
 const liveTableObjectArray = [
+  {date: "10.10.2026",
+    event: "Aive With Wings @ 7.30pm",
+    location: "Harley Village Hall",
+    link: "mailto:arjf70@gmail.com"
+  },
   {
     date: "03.06.2025",
     event: "SALFORD CITY RADIO'S WITCHES HOUR @ 2pm",
