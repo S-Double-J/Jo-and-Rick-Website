@@ -294,15 +294,15 @@ function Live() {
                 }}
               />
             </CloseButton>
-            <PopUpTextLarge>LLANSILIN HERITAGE PROJECT</PopUpTextLarge>
+            <PopUpTextLarge>ALIVE WITH WINGS</PopUpTextLarge>
             <PopUpTextRegular>
-              To book your ticket for this event please email Mary Cunnah at
+              To book your ticket for this event please email the venue at
             </PopUpTextRegular>
             <PopUpButton
               className="button-small"
-              href="mailto:marycunnah@yahoo.co.uk"
+              href="mailto:arjf70@gmail.com"
             >
-              <PopUpTextRegular>marycunnah@yahoo.co.uk</PopUpTextRegular>
+              <PopUpTextRegular>arjf70@gmail.com</PopUpTextRegular>
             </PopUpButton>
             <PopUpTextRegular>
               In your email please include the number of tickets required and

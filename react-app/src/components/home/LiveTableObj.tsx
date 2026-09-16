@@ -2,7 +2,7 @@ const liveTableObjectArray = [
   {date: "10.10.2026",
     event: "Aive With Wings @ 7.30pm",
     location: "Harley Village Hall",
-    link: "mailto:arjf70@gmail.com"
+    link: "pop-up"
   },
   {
     date: "11.07.2026",
@@ -32,12 +32,6 @@ const liveTableObjectArray = [
     event: "‘Alive With Wings' FOUR PIECE BAND @ 7.30pm",
     location: "HAFON YR AFON, NEWTOWN",
     link: "https://www.hafanyrafon.com/event-details/alive-with-wings-jo-jukes-rick-wilson-band",
-  },
-  {
-    date: "02.05.2026",
-    event: "‘Alive With Wings' FOUR PIECE BAND @ 7.30pm",
-    location: "ST SILINS CHURCH, LLANSILIN, POWYS",
-    link: "pop-up",
   },
   {
     date: "14.04.26",
