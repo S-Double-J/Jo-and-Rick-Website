@@ -1,4 +1,10 @@
 const liveTableObjectArray = [
+  {
+    date: "27.10.26",
+    event: "Salford City Radio Witches Hour @ 2pm",
+    location: "RADIO",
+    link: "https://player.autopod.xyz/1234420?fbclid=IwdGRjcAQma6VjbGNrBCZriWV4dG4DYWVtAjExAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHozI67LdHcUDP7Bc1EViOlc2HyPJisaWjGwyNVCdLA45lCtmH53OHBsRbt0p_aem_MRAM1kHgWM-cH_a4On2jJQ",
+  },
   {date: "10.10.2026",
     event: "Aive With Wings @ 7.30pm",
     location: "Harley Village Hall",
